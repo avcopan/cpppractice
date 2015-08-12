@@ -1,0 +1,28 @@
+# example_v1.cpp
+# this is the original example from Boost 1.55.0 User's Guide, with one typo fix:
+# accumulators::moment<2>(acc) -> moment<2>(acc)
+
+# compile using
+c++ -I /usr/include/boost/ example_v1.cpp -o example_v1
+
+# run using
+./example_v1
+
+# example_v2.cpp
+# exploring what the code looks like without using namespace boost::accumulators;
+
+# compile using
+c++ -I /usr/include/boost/ example_v2.cpp -o example_v2
+
+# run using
+./example_v2
+
+# example_v3.cpp
+# trying out namespace alias -- shorten boost::accumulators:: to ba::
+
+# compile using
+c++ -I /usr/include/boost/ example_v3.cpp -o example_v3
+
+# run using
+./example_v3
+
