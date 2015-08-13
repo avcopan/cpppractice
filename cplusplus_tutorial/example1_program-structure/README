@@ -1,0 +1,6 @@
+# compile using
+c++ helloworld.cpp -o helloworld.o
+
+# run using
+./helloworld.o
+

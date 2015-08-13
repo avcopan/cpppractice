@@ -1,0 +1,11 @@
+# increment.cpp
+# noting the difference between ++x and x++
+# ++x returns (x+1) and then increments the value of x by 1
+# x++ returnx x and then increments the value of x by 1
+
+# compile with
+c++ increment.cpp -o increment.o
+
+# run with
+./increment.o
+

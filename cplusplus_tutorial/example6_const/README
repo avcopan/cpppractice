@@ -1,0 +1,13 @@
+# const.cpp
+# illustrates the use of const qualifier
+
+# try compiling with
+c++ const.cpp -o const.o
+# to see that it fails
+
+# compile with
+c++ -fpermissive const.cpp -o const.o
+# which returns a warning but still allows the code to run (ignoring the const qualifier)
+
+# run with
+./const.o

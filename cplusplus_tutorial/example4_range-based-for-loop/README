@@ -1,0 +1,8 @@
+# range.cpp
+# illustrates the use of range-based for loops in C++11
+
+# compile with
+c++ -std=c++11 range.cpp -o range.o
+
+# execute as
+./range.o

@@ -1,0 +1,9 @@
+# circumference.cpp
+# shows how to provide preprocessor definitions with #define
+
+# compile using
+c++ circumference.cpp -o circumference.o
+
+# run using
+./circumference.o
+
