@@ -1,0 +1,9 @@
+# example1.cc
+
+# compile using
+
+c++ -std=c++11 -I/home/avcopan/Documents/code/github/ambit/include -o example1.o -c example1.cc
+
+# link using
+
+c++ -std=c++11 example1.o -o example1 /home/avcopan/Documents/code/github/ambit/build/src/libambit.so -Wl,-rpath,/home/avcopan/Documents/code/github/ambit/build/src
