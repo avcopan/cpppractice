@@ -1,0 +1,30 @@
+# struct1.cpp
+# example of C++ data structure
+
+# compile using
+c++ struct1.cpp -o struct1.bin
+
+# run using
+./struct1.bin
+
+
+# struct2.cpp
+# illustration of pointer to struct, for which members are accessed using -> rather than .
+#                  pstruct->member is equivalent to                     (*pstruct).member
+# i.e. (pointer to struct)->member is equivalent to (struct pointed to by pstruct).member
+
+# compile using
+c++ struct2.cpp -o struct2.bin
+
+# run using
+./struct2.bin
+
+# struct3.cpp
+# illustration of nested data structures
+
+# compile using
+c++ struct3.cpp -o struct3.bin
+
+# run using
+./struct3.bin
+

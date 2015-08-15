@@ -1,0 +1,20 @@
+# typedef1.cpp
+# illustrates the syntax for creating type aliases
+
+# compile using
+c++ typedef1.cpp -o typedef1.bin
+
+# run using
+./typedef1.bin
+
+
+# typedef2.cpp
+# illustrates the syntax for creating type unions, allowing a
+# (somewhat dangerous) way of defining arrays of mixed type
+
+# compile using
+c++ -std=c++11 typedef2.cpp -o typedef2.bin
+
+# run using
+./typedef2.bin
+

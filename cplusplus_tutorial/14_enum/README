@@ -1,0 +1,9 @@
+# enum1.cpp
+# illustrates the syntax for creating enumerated types
+
+# compile using
+c++ enum1.cpp -o enum1.bin
+
+# run using
+./enum1.bin
+
