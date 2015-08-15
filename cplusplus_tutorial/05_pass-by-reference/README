@@ -2,8 +2,8 @@
 # illustrates passing function arguments by reference -- i.e. giving the function direct access to a variable
 
 # compile with
-c++ double.cpp -o double.o
+c++ double.cpp -o double.bin
 
 # execute as
-./double.o
+./double.bin
 

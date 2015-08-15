@@ -1,18 +1,18 @@
 # example_v1.cpp
 # this is the original example
 # to compile, use:
-c++ -I /usr/include/boost/ example_v1.cpp -o example_v1.o
+c++ -I /usr/include/boost/ example_v1.cpp -o example_v1.bin
 
 # to run, use:
-echo 1 2 3 | ./example_v1.o
+echo 1 2 3 | ./example_v1.bin
 
 # example_v2.cpp
 # used namespace alias bl for boost::lambda to clarify which part relies on boost
 # apparently _1 comes from the boost::lambda namespace
 
 # to compile, use:
-c++ -I /usr/include/boost/ example_v2.cpp -o example_v2.o
+c++ -I /usr/include/boost/ example_v2.cpp -o example_v2.bin
 
 # to run, use:
-echo 1 2 3 | ./example_v2.o
+echo 1 2 3 | ./example_v2.bin
 

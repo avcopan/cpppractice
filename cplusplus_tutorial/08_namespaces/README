@@ -1,0 +1,7 @@
+# namespace1.cpp
+
+# compile
+c++ namespace1.cpp -o namespace1.bin
+
+# run
+./namespace1.bin

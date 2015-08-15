@@ -1,0 +1,6 @@
+# compile using
+c++ helloworld.cpp -o helloworld.bin
+
+# run using
+./helloworld.bin
+

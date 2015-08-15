@@ -1,0 +1,8 @@
+# stdarray1.cpp
+# illustrating the special features of std::array versus regular arrays
+
+# compile with C++11
+c++ -std=c++11 stdarray1.cpp -o stdarray1.bin
+
+# run as
+./stdarray1.bin

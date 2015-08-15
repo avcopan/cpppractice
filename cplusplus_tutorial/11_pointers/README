@@ -1,0 +1,8 @@
+# pointers.cpp
+
+# compile
+c++ pointers.cpp -o pointers.bin
+
+# run
+./pointers.bin
+

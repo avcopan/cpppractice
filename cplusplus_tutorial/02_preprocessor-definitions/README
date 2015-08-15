@@ -2,8 +2,8 @@
 # shows how to provide preprocessor definitions with #define
 
 # compile using
-c++ circumference.cpp -o circumference.o
+c++ circumference.cpp -o circumference.bin
 
 # run using
-./circumference.o
+./circumference.bin
 

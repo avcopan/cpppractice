@@ -3,26 +3,26 @@
 # accumulators::moment<2>(acc) -> moment<2>(acc)
 
 # compile using
-c++ -I /usr/include/boost/ example_v1.cpp -o example_v1.o
+c++ -I /usr/include/boost/ example_v1.cpp -o example_v1.bin
 
 # run using
-./example_v1.o
+./example_v1.bin
 
 # example_v2.cpp
 # exploring what the code looks like without using namespace boost::accumulators;
 
 # compile using
-c++ -I /usr/include/boost/ example_v2.cpp -o example_v2.o
+c++ -I /usr/include/boost/ example_v2.cpp -o example_v2.bin
 
 # run using
-./example_v2.o
+./example_v2.bin
 
 # example_v3.cpp
 # trying out namespace alias -- shorten boost::accumulators:: to ba::
 
 # compile using
-c++ -I /usr/include/boost/ example_v3.cpp -o example_v3.o
+c++ -I /usr/include/boost/ example_v3.cpp -o example_v3.bin
 
 # run using
-./example_v3.o
+./example_v3.bin
 

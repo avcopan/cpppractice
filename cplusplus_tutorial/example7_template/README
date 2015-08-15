@@ -1,9 +1,0 @@
-# template.cpp
-# illustrates the use of function templates
-
-# compile with
-c++ template.cpp -o template.o
-
-# run as
-./template.o
-

@@ -1,0 +1,27 @@
+# template1.cpp
+# illustrates the use of function templates
+
+# compile with
+c++ template1.cpp -o template1.bin
+
+# run as
+./template1.bin
+
+# template2.cpp
+# illustrates the use of function templates
+
+# compile with
+c++ template2.cpp -o template2.bin
+
+# run as
+./template2.bin
+
+# template3.cpp
+# illustrates the use of function templates
+
+# compile with
+c++ template3.cpp -o template3.bin
+
+# run as
+./template3.bin
+

@@ -21,7 +21,7 @@ int main()
   printf("add<int>(1,2) returns %d\n", add<int>(1,2));
   printf("add<float>(1.3,2.98) returns %f\n", add<float>(1.3,2.98));
   printf("add<bool>(true,false) returns %s\n", add<bool>(true,false)?"true":"false");
-  printf("add<std::string>(\"Hello\",\"World\") [as std::strings] returns %s\n", add<std::string>("Hello","World").c_str());
+  printf("add<std::string>(\"Hello\",\"World\") returns %s\n", add<std::string>("Hello","World").c_str());
   // note that this last line will fail without explicit instantation <std::string>, because the arguments "Hello" and "World"
   // will be assumed to have type char* rather than std::string
 }

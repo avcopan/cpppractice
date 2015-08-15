@@ -4,8 +4,8 @@
 # x++ returnx x and then increments the value of x by 1
 
 # compile with
-c++ increment.cpp -o increment.o
+c++ increment.cpp -o increment.bin
 
 # run with
-./increment.o
+./increment.bin
 
