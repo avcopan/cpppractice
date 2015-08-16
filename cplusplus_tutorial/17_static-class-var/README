@@ -1,0 +1,9 @@
+# statvar1.cpp
+# shows the behavior of static class variables
+
+# compile
+c++ statvar1.cpp -o statvar1.bin
+
+# run
+./statvar1.bin
+

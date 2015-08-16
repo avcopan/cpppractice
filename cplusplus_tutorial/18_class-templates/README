@@ -1,0 +1,9 @@
+# classtemplate1.cpp
+# illustrates syntax for class templates
+
+# compile
+c++ classtemplate1.cpp -o classtemplate2.bin
+
+# run
+./classtemplate2.bin
+

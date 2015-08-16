@@ -1,0 +1,19 @@
+# twovec1.cpp
+# illustrates class definition with operator overloading
+
+# compile with
+c++ twovec1.cpp -o twovec1.bin
+
+# run as
+./twovec1.bin
+
+
+# twovec2.cpp
+# illustrates how some operators can be overloaded as non-member functions
+
+# compile with
+c++ twovec2.cpp -o twovec2.bin
+
+# run as
+./twovec2.bin
+

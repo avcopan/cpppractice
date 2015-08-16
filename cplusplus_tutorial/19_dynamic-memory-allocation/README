@@ -1,0 +1,9 @@
+# mem1.cpp
+# dynamic memory allocation
+
+# compile
+c++ mem1.cpp -o mem1.bin
+
+# run
+./mem1.bin
+

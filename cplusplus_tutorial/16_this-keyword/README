@@ -1,0 +1,19 @@
+# this1.cpp
+# illustrates the use of the 'this' keyword
+
+# compile
+c++ this1.cpp -o this1.bin
+
+# run
+./this1.bin
+
+
+# this2.cpp
+# uses 'this' keyword to provide return value for class-overloaded operator=
+
+# compile
+c++ this2.cpp -o this2.bin
+
+# run
+./this2.bin
+
