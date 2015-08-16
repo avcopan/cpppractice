@@ -1,0 +1,19 @@
+# friend1.cpp
+# illustrates the use of the friend keyword to give specific functions access to private class attributes
+
+# compile
+c++ friend1.cpp -o friend1.bin
+
+# run
+./friend1.bin
+
+
+# friend2.cpp
+# illustrates the definition of a friend class
+
+# compile
+c++ friend2.cpp -o friend2.bin
+
+# run
+./friend2.bin
+
