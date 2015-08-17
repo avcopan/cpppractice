@@ -1,0 +1,52 @@
+# poly1.cpp
+# illustrating polymorphism -- taking advantage of the fact that pointers to derived classes are type-compatible
+#                              with base-class pointers
+
+# compile
+c++ poly1.cpp -o poly1.bin
+
+# run
+./poly1.bin
+
+
+# poly2.cpp
+# illustrates the use of the *virtual* keyword to allow derived-class-specific functions to be accessed via
+# base-class pointers -- classes which declare or inherit virtual functions are called "polymorphic classes",
+# because the same attributes have different actions depending on what which class the base-class pointers refer to
+
+# compile
+c++ poly2.cpp -o poly2.bin
+
+# run
+./poly1.bin
+
+
+# poly3.cpp
+# illustrates the use of abstract base classes
+
+# compile
+c++ poly3.cpp -o poly3.bin
+
+# run
+./poly3.cpp
+
+# poly4.cpp
+# illustrates how functions common to all derived classes can be defined once in the abstract base class,
+# rather than redefining them for each derived class
+
+# compile
+c++ poly4.cpp -o poly4.bin
+
+# run
+./poly4.bin
+
+
+# poly5.cpp
+# final example combining dynamic memory allocation and polymorphism
+
+# compile
+c++ poly5.cpp -o poly5.bin
+
+# run
+./poly5.bin
+
