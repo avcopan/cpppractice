@@ -1,0 +1,9 @@
+# conv1.cpp
+# type-casting from classes -- I don't understand this well at the moment
+
+# compile
+c++ conv1.cpp -o conv1.bin
+
+# run
+./conv1.bin
+
