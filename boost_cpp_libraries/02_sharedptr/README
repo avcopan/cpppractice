@@ -1,0 +1,11 @@
+# sharedptr.cpp
+# illustrates the use of shared pointers
+
+# compile
+c++ -std=c++11 -I /usr/include/boost/ sharedptr.cpp -o sharedptr.bin
+
+# run
+./sharedptr.bin
+
+
+# make

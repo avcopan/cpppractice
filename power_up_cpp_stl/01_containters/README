@@ -1,0 +1,51 @@
+# 01_vector.cpp
+# basic std::vector initialization and printing
+
+# compile
+c++ -std=c++11 01_vector.cpp -o 01_vector.bin
+
+# run
+./01_vector.bin
+
+
+# 02_vector.cpp
+# std::vector.size() and std::vector.empty() methods
+
+# compile
+c++ 02_vector.cpp -o 02_vector.bin
+
+# run
+./02_vector.bin
+
+
+# 03_vector.cpp
+# std::vector.resize() and std::vector.clear()
+
+# compile
+c++ -std=c++11 03_vector.cpp -o 03_vector.bin
+
+# run
+./03_vector.bin
+
+
+# 04_vector.cpp
+# std::vector operator= does NOT pass a pointer -- it allocates a new vector!
+
+# compile
+c++ -std=c++11 04_vector.cpp -o 04_vector.bin
+
+# run
+./04_vector.bin
+
+
+# 05_matrix.cpp
+# shows how to create a matrix as std::vector of std::vectors
+# also practiced the use of template functions with print_mat function
+
+# compile
+c++ -std=c++11 05_matrix.cpp -o 05_matrix.bin
+
+# run
+./05_matrix.bin
+
+
