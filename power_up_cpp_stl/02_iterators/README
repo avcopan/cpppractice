@@ -1,0 +1,29 @@
+# 01_pointer-no-iterator.cpp
+# example of reverse_array functions using std::swap and using pointers
+
+# compile
+c++ 01_pointer-no-iterator.cpp -o 01_pointer-no-iterator.bin
+
+# run
+./01_pointer-no-iterator.bin
+
+
+# 02_iterator.cpp
+# std::reverse function and an equivalent implementation of the same
+
+# compile
+c++ 02_iterator.cpp -o 02_iterator.bin
+
+# run
+./02_iterator.bin
+
+
+# 03_iterator.cpp
+# some different ways of initializing std::vector
+
+# compile
+c++ 03_iterator.cpp -o 03_iterator.bin
+
+# run
+./03_iterator.bin
+

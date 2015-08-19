@@ -1,0 +1,39 @@
+# 01temp.cpp
+# template example
+
+# compile
+c++ 01temp.cpp -o 01temp.bin
+
+# run
+./01temp.bin
+
+
+# 02typename.cpp
+# example of where one would need to use *typename* keyword
+
+# compile
+c++ 02typename.cpp -o 02typename.bin
+
+# run
+./02typename.bin
+
+
+# 03temp.cpp
+# example of the use of default template parameters -- requires C++11
+
+# compile
+c++ -std=c++11 03temp.cpp -o 03temp.bin
+
+# run
+./03temp.bin
+
+
+# 04temp.cpp
+# illustrates the use of a member template
+
+# compile
+c++ 04temp.cpp -o 04temp.bin
+
+# run
+./04temp.bin
+

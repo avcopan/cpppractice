@@ -1,0 +1,9 @@
+# 01pair.cpp
+# example of std::pair creation
+
+# compile
+c++ 01pair.cpp -o 01pair.bin
+
+# run
+./01pair.bin
+

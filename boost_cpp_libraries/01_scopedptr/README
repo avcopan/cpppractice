@@ -6,3 +6,12 @@ c++ -std=c++11 -I /usr/include/boost/ scopedptr.cpp -o scopedptr.bin
 # run
 ./scopedptr.bin
 
+
+# scopedarray.cpp
+
+# compile
+c++ -std=c++11 -I /usr/include/boost/ scopedarray.cpp -o scopedarray.bin
+
+# run
+./scopedarray.bin
+

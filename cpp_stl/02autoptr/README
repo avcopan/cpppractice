@@ -1,0 +1,19 @@
+# 01autoptr.cpp
+# example of std::auto_ptr creation
+
+# compile
+c++ 01autoptr.cpp -o 01autoptr.bin
+
+# run
+./01autoptr.bin
+
+
+# 02autoptr.cpp
+# illustrating change of ownership for std::auto_ptrs
+
+# compile
+c++ 02autoptr.cpp -o 02autoptr.bin
+
+# run
+./02autoptr.bin
+
