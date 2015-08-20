@@ -1,4 +1,4 @@
-# compile
+# compile -- make sure you export PSI4=/path/to/psi4/ in your .bashrc file (source ~/.bashrc if you didn't have it there already)
 c++ -fPIC -std=c++11 -I$PSI4/obj/src/lib -I$PSI4/src/lib -I$PSI4/include -I$PSI4/obj/include -I/usr/include -I/usr/include/python2.7 -c minimal.cc
 
 # link

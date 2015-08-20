@@ -16,9 +16,9 @@
     -----------------------------------------------------------------------
 
 
-    Psi4 started on: Wed Aug 19 19:22:43 2015
+    Psi4 started on: Wed Aug 19 19:52:23 2015
 
-    Process ID:   4931
+    Process ID:   5633
     PSI4DATADIR: /home/avcopan/Packages/psi4/lib
     Memory level set to 256.000 MB
 
@@ -40,5 +40,6 @@ psi4.plugin('./minimal.so')
 Reading options from the MINIMAL block
 Calling plugin ./minimal.so.
 Hello World!
+nbf = 7
 
 *** PSI4 exiting successfully. Buy a developer a beer!

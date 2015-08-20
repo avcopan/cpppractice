@@ -1,6 +1,4 @@
 #include <libplugin/plugin.h>
-//#include <psi4-dec.h>
-#include <libparallel/parallel.h>
 #include <liboptions/liboptions.h>
 #include <libmints/mints.h>
 #include <libpsio/psio.hpp>
@@ -19,6 +17,10 @@ psi::PsiReturnType minimal(psi::Options& options)
 
   std::cout << "Hello World!" << std::endl;
   psi::outfile->Printf("Hello World!\n");
+
+  psi::MintsHelper mints;
+  psi::outfile->Printf("nbf = %d\n", mints.basisset()->nbf());
+  //psi::MintsHelper mints(psi::Process::environment.options, 0);
 
   return psi::Success;
 }
