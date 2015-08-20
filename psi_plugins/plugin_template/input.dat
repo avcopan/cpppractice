@@ -7,5 +7,5 @@ molecule {
 
 set basis sto-3g
 
-psi4.plugin('./minimal.so')
+psi4.plugin('./plugin_main.so')
 
