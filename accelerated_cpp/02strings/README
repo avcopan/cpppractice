@@ -1,0 +1,8 @@
+# 01string.cpp
+
+# compile
+c++ 01string.cpp type.cpp -o 01string.bin
+
+# run
+./01string.bin
+
