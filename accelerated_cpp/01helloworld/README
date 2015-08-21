@@ -1,0 +1,18 @@
+# 01helloworld.cpp
+
+# compile
+c++ 01helloworld.cpp -o 01helloworld.bin
+
+# run
+./01helloworld.bin
+
+
+# 02helloworld.cpp
+# prints types for std::cout and "...."
+
+# compile
+c++ 02helloworld.cpp type.cpp -o 02helloworld.bin
+
+# run
+./02helloworld.bin
+
