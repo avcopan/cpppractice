@@ -1,0 +1,82 @@
+# 01vec.cpp
+# std::vector push_back() and size() methods
+
+# compile
+c++ 01vec.cpp -o 01vec.bin
+
+# run
+./01vec.bin
+
+
+# 02vec.cpp
+# std::sort() method from <algorithm>
+
+# compile
+c++ 02vec.cpp -o 02vec.bin
+
+# run
+./02vec.bin
+
+
+# 03vec.cpp
+# std::domain_error() from <stdexcept> library and illustrating the use of functions to improve program design -- also, pass by reference of std::vector<T>
+
+# compile
+c++ 03vec.cpp -o 03vec.bin
+
+# run
+./03vec.bin
+
+
+# 04ref.cpp
+# illustrating reference types
+
+# compile
+c++ 04ref.cpp -o 04ref.bin
+
+# run
+./04ref.bin
+
+
+# 05constref.cpp
+# illustrating const reference types
+
+# compile
+c++ 05constref.cpp -o 05constref.bin
+
+# run
+./05constref.bin
+
+
+# 06lval.cpp
+# illustrating the meaning of lvalue
+
+# compile
+c++ 06lval.cpp # note: this program is intended to fail at compile-time
+
+
+# 07lval.cpp
+# a subtler example of the meaning of lvalue
+
+# compile
+c++ 07lval.cpp -o 07lval.bin
+
+# run
+./07lval.bin
+
+
+# 08rval.cpp
+# illustrating the meaning of rvalue
+
+# compile
+c++ 08rval.cpp # intended to fail
+
+# 09vec.cpp
+# continuation of std::vector exploration -- uses std::vector<T>.clear() method
+
+# compile
+c++ 09vec.cpp -o 09vec.bin
+
+# run
+./09vec.bin
+
