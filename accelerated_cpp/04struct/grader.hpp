@@ -17,8 +17,12 @@ double median(std::vector<double>);
 
 double grade(const Student&);
 
-std::istream& read_homeworks(std::istream&, std::vector<double>&)
+std::istream& read_homeworks(std::istream&, std::vector<double>&);
 
-std::istream& read(std::istream&, Student&)
+std::istream& read(std::istream&, Student&);
+
+std::vector<Student> extract_fails(std::vector<Student>&);
+
+void print_grades(const std::vector<Student>&);
 
 #endif

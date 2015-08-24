@@ -1,5 +1,8 @@
 #include "grader.hpp"
 #include <iostream>
+#include <iomanip>
+#include <algorithm>
+#include <vector>
 #include <stdexcept>
 
 bool operator<(const Student& lstudent, const Student& rstudent)
@@ -29,7 +32,7 @@ std::istream& read_homeworks(std::istream& cin, std::vector<double>& homeworks)
 
 std::istream& read(std::istream& is, Student& student)
 {
-  is >> student.name >> student.miderm >> student.finalexam;
+  is >> student.name >> student.midterm >> student.finalexam;
   read_homeworks(is, student.homeworks);
 
   return is;
@@ -38,5 +41,33 @@ std::istream& read(std::istream& is, Student& student)
 double grade(const Student& student)
 {
   return 0.2 * student.midterm + 0.4 * student.finalexam + 0.4 * median(student.homeworks);
+}
+
+std::vector<Student> extract_fails(std::vector<Student>& students)
+{
+  std::vector<Student> pass, fail;
+
+  for(std::vector<Student>::size_type i = 0; i != students.size(); ++i)
+  {
+    if(grade(students[i]) < 60) fail.push_back(students[i]);
+    else                        pass.push_back(students[i]);
+  }
+
+  students = pass;
+  return fail;
+}
+
+void print_grades(const std::vector<Student>& students)
+{
+  std::string::size_type maxlen = 0;
+  for(std::vector<Student>::size_type i = 0; i != students.size(); ++i)
+    maxlen = std::max(maxlen, students[i].name.size());
+
+  std::streamsize prec;
+  for(std::vector<Student>::size_type i = 0; i != students.size(); ++i)
+    std::cout << std::setw(maxlen + 1)   << std::left          << students[i].name
+              << std::setprecision(3)    << grade(students[i])
+              << std::setprecision(prec) << std::endl;
+
 }
 

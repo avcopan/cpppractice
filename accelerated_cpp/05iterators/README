@@ -1,0 +1,10 @@
+# 01main.cpp
+# grabbing vector partition, with and without iterators
+# I decided to try writing the functions as templates, which means the implementation must be included directly in the header file
+
+# compile
+c++ 01main.cpp -o 01main.bin
+
+# run
+./01main.bin
+

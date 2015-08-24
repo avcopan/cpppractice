@@ -1,0 +1,21 @@
+# 01main.cpp
+# illustrates the separation of a program into a library (header + source) and a main program making use of that library
+
+# compile
+c++ 01main.cpp grader.cpp -o 01main.bin
+
+# run
+./01main.bin
+
+
+# 02main.cpp
+# partitioning students into passing and failing groups
+
+# compile
+c++ 02main.cpp grader.cpp -o 02main.bin
+
+# run
+./02main.bin
+
+
+

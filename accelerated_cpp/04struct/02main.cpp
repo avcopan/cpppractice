@@ -17,4 +17,11 @@ int main()
 
   std::sort(students.begin(), students.end());
   print_grades(students);
+
+  std::vector<Student> failures = extract_fails(students);
+  std::cout << "Failing students: " << std::endl;
+  print_grades(failures);
+  
+  std::cout << "Passing students: " << std::endl;
+  print_grades(students);
 }

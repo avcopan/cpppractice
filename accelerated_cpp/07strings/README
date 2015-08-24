@@ -1,0 +1,13 @@
+# main.cpp
+# implementing and using a std::string split function
+# std::string as container -- also I want to practice compiling and linking separately here
+
+# compile (don't link) -- generates object (*.o) file
+c++ split.cpp -c
+
+# link
+c++ main.cpp split.o -o main.bin
+
+# run
+./main.bin
+

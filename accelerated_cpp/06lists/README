@@ -1,0 +1,10 @@
+# 01main.cpp
+# using std::lists instead of std::vectors for partitioning -- this is more efficient, because std::list is specifically
+# optimized for rapid removal and addition of elements from the center of the container
+
+# compile
+c++ 01main.cpp -o 01main.bin
+
+# run
+./01main.bin
+
