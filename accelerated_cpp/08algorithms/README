@@ -1,0 +1,38 @@
+# 01insert.cpp
+
+# compile
+c++ 01insert.cpp -o 01insert.bin
+
+# run
+./01insert.bin
+
+
+# 02split.cpp
+# use of std::find_if to advance iterator until predicate becomes false
+
+# compile
+c++ 02split.cpp -o 02split.bin
+
+# run
+./02split.bin
+
+
+# 03rbegin.cpp
+# some neat examples of reverse iterators -- also, the std::equal algorithm
+
+# compile
+c++ 03rbegin.cpp -o 03rbegin.bin
+
+# run
+./03rbegin.bin
+
+
+# 04transform.cpp
+# illustrates the use of std::transform -- apply function to each element of iterator and add it to another iterator
+
+# complie
+c++ 04transform.cpp -o 04transform.bin
+
+# run
+./04transform.bin
+
