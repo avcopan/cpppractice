@@ -1,0 +1,18 @@
+# 01map.cpp
+# std::map example
+
+# compile
+c++ 01map.cpp -o 01map.bin
+
+# run
+echo 1 1 2 2 2 3 3 3 3 3 3 3 5 5 | ./01map.bin
+
+
+# 02map.cpp
+# another std::map example
+
+# compile
+c++ 02map.cpp -o 02map.bin
+
+# run
+echo hello hello the the the world world world world | ./02map.bin
