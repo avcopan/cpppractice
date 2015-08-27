@@ -1,0 +1,19 @@
+# 01ops.cpp
+# a simple example of operator overloading with the ops class
+
+# compile
+c++ 01ops.cpp -I/usr/include/boost/ -o 01ops.bin
+
+# run
+./01ops.bin
+
+
+# 02ops.cpp
+# a more advanced example, including composite arithmetic operators
+
+# compile
+c++ 02ops.cpp -I/usr/include/boost/ -o 02ops.bin
+
+# run
+./02ops.bin
+

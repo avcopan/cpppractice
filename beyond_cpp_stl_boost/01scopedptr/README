@@ -1,0 +1,38 @@
+# 01scoped.cpp
+# simple scoped ptr example
+
+# compile
+c++ -I/usr/include/boost/ 01scoped.cpp -o 01scoped.bin
+
+# run
+./01scoped.bin
+
+
+# 02scoped.cpp
+# illustrating the difference between std::auto_ptr and boost::scoped_ptr
+
+# compile
+c++ -I/usr/include/boost/ 02scoped.cpp -o 02scoped.bin
+
+# run
+./02scoped.bin
+
+
+# 03scoped.cpp
+# book example
+
+# compile
+c++ -I/usr/include/boost/ 03scoped.cpp -o 03scoped.bin
+
+# run
+./03scoped.bin
+
+
+# 04scoped.cpp
+# book example
+
+# compile
+c++ -I/usr/include/boost/ 04scoped.cpp -o 04scoped.bin
+
+# run
+./04scoped.bin

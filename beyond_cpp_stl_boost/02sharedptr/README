@@ -1,0 +1,49 @@
+# 01shared.cpp
+# illustrating the behavior of boost::shared_ptr
+
+# compile
+c++ 01shared.cpp -I/usr/include/boost -o 01shared.bin
+
+# run
+./01shared.bin
+
+
+# 02shared.cpp
+# an example scenario where memory handling would be extremely difficult without the use of boost::shared_ptr
+
+# compile
+c++ 02shared.cpp -I/usr/include/boost/ -o 02shared.bin
+
+# run
+./02shared.bin
+
+
+# 03shared.cpp
+# book example -- std::vector of boost::shared_ptrs
+
+# compile
+c++ 03shared.cpp -I/usr/include/boost/ -o 03shared.bin
+
+# run
+./03shared.bin
+
+
+# 04shared.cpp
+# example with a custom deleter -- callse std::fclose on shared FILE pointer
+
+# compile
+c++ 04shared.cpp -I/usr/include/boost/ -o 04shared.bin
+
+# run
+./04shared.bin
+
+
+# 05shared.cpp
+# example with a custom deleter -- callse std::fclose on shared FILE pointer
+
+# compile
+c++ 05shared.cpp -I/usr/include/boost/ -o 05shared.bin
+
+# run
+./05shared.bin
+
