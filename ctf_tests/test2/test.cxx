@@ -20,6 +20,13 @@ int main(int argc, char** argv)
     int dim2[] = {3,3,3,3};
     int sym2[] = {SYM::AS, SYM::NS, SYM::AS, SYM::NS};
     CTF::Tensor<> asmten(4, dim2, sym2, world);
+
+    tensor = 0.5;
+    tensor["pqrs"] = tensor["pqtu"] * tensor["turs"];
+
+    asmten = 0.5;
+    asmten["pqrs"] = asmten["pqtu"] * asmten["turs"];
+
     scalar.print(stdout);
     vector.print(stdout);
     matrix.print(stdout);
