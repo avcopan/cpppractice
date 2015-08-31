@@ -17,3 +17,26 @@ c++ 02ops.cpp -I/usr/include/boost/ -o 02ops.bin
 # run
 ./02ops.bin
 
+
+# 03ops.cpp
+# a more advanced example, illustrating some potential traps that arise from defining inconsistent operator< and operator==
+
+# compile
+c++ -I/usr/include/boost/ 03ops.cpp -o 03ops.bin
+
+# run
+./03ops.bin
+
+
+
+# 04ops.cpp
+# rewritten version of 03ops.cpp, with new operator< definition that is consistent with operator==
+
+# compile
+c++ -I/usr/include/boost/ 04ops.cpp -o 04ops.bin
+
+# run
+./04ops.bin
+
+
+

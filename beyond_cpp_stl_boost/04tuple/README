@@ -1,0 +1,59 @@
+# 01tup.cpp
+# basic tuple creation and access
+
+# compile
+c++ -I/usr/include/boost/ 01tup.cpp -o 01tup.bin
+
+# run
+./01tup.bin
+
+
+# 02tup.cpp
+# book example -- I don't fully understand all of the polymorphism stuff
+
+# compile
+c++ -I/usr/include/boost/ 02tup.cpp -o 02tup.bin
+
+# run
+./02tup.bin
+
+
+# 03tup.cpp
+# tuple comparisons
+
+# compile
+c++ -I/usr/include/boost/ 03tup.cpp -o 03tup.bin
+
+# run
+./03tup.bin
+
+
+# 04tup.cpp
+# sorting of tuples
+
+# compile
+c++ -I/usr/include/boost/ 04tup.cpp -o 04tup.bin
+
+# run
+./04tup.bin
+
+
+# 05tup.cpp
+# *tie*ing tuple return values to individual variables -- like a, b = (c, d) in python
+
+# compile
+c++ -I/usr/inclue/boost/ 05tup.cpp -o 05tup.bin
+
+# run
+./05tup.bin
+
+
+# 06tup.cpp
+# boost::tuples I/O -- allows flexibility for input and output of tuples
+
+# compile
+c++ -I/usr/include/boost/ 06tup.cpp -o 06tup.bin
+
+# run
+./06tup.bin
+

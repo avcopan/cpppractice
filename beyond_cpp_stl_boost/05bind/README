@@ -1,0 +1,51 @@
+# 01bind.cpp
+# basic illustation of boost::bind functionality
+
+# compile
+c++ -I/usr/include/boost/ 01bind.cpp -o 01bind.bin
+
+# run
+./01bind.bin
+
+
+# 02bind.cpp
+# using boost::bind to loop over container and call a function on each element
+
+# compile
+c++ -I/usr/include/boost/ 02bind.cpp -o 02bind.bin
+
+# run
+./02bind.bin
+
+
+# 03bind.cpp
+# same as 02bind.cpp, but using pointers
+
+# compile
+c++ -I/usr/include/boost/ 03bind.cpp -o 03bind.bin
+
+# run
+./03bind.bin
+
+
+
+# 04bind.cpp
+# same as 02bind.cpp, but using boost::shared_ptrs -- in this case, we would have to resort to a for loop without boost::bind
+
+# compile
+c++ -I/usr/include/boost/ 04bind.cpp -o 04bind.bin
+
+# run
+./04bind.bin
+
+
+
+# 05bind.cpp
+# example of a simple implementation of a function binder
+
+# compile -- this doesn't use boost
+c++ 05bind.cpp -o 05bind.bin
+
+# run
+./05bind.bin
+
