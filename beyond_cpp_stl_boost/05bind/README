@@ -49,3 +49,25 @@ c++ 05bind.cpp -o 05bind.bin
 # run
 ./05bind.bin
 
+
+# 06bind.cpp
+# when calling boost::bind on a class method (as opposed to a free function), _1 must be an instance of the class
+
+# compile
+c++ -I/usr/include/boost/ 06bind.cpp -o 06bind.bin
+
+# run
+./06bind.bin
+
+
+# 07bind.cpp
+# example of wrapped boost::binds to generate sorting predicate in place, which can be fed to std::sort
+
+# compile
+c++ -I/usr/include/boost/ 07bind.cpp -o 07bind.bin
+
+# run
+./07bind.bin
+
+
+
