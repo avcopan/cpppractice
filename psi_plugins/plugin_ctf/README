@@ -3,10 +3,6 @@
 #       Psi4 must be compiled with ../setup --mpi
 mpicxx -fPIC -fopenmp -std=c++0x -I$GITHUB/psi4/obj/src/lib -I$GITHUB/ctf/include/ -I$GITHUB/psi4/src/lib -I$GITHUB/psi4/include -I$GITHUB/psi4/obj/include -I/usr/include/python2.7 -I. -c plugin_main.cc
 
-
-#mpicxx -std=c++0x -fopenmp  test.cxx -o test.bin -lblas
-#mpicxx -std=c++0x -fopenmp  test.cxx -o test.bin -I$GITHUB/ctf/include/ -L$GITHUB/ctf/lib -lctf -lblas
-
 # link
 mpicxx -shared -o plugin_main.so plugin_main.o -L$GITHUB/ctf/lib -L$GITHUB/psi4/obj/lib -lplugin -lctf
 
