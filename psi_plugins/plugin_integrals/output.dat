@@ -1,8 +1,8 @@
     -----------------------------------------------------------------------
           Psi4: An Open-Source Ab Initio Electronic Structure Package
-                              Psi4 0.3.7 Driver
+                              Psi4 0.3.53 Driver
 
-                          Git: Rev {dcft-erpa} b8e4185 dirty
+                          Git: Rev {master} b88170f 
 
     J. M. Turney, A. C. Simmonett, R. M. Parrish, E. G. Hohenstein,
     F. A. Evangelista, J. T. Fermann, B. J. Mintz, L. A. Burns, J. J. Wilke,
@@ -16,9 +16,9 @@
     -----------------------------------------------------------------------
 
 
-    Psi4 started on: Mon Aug 31 16:42:08 2015
+    Psi4 started on: Tue Sep  1 17:16:40 2015
 
-    Process ID:   3355
+    Process ID:   2493
     PSI4DATADIR: /home/avcopan/Packages/psi4/lib
     Memory level set to 256.000 MB
 

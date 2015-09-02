@@ -16,11 +16,14 @@ SOIntegrals::SOIntegrals(psi::MintsHelper mints)
   dim.print();
 
   psi::SharedMatrix M(new psi::Matrix(dim,dim));
-  M->print();
-  S->print();
+  //M->print();
+  //S->print();
 
   M->apply_symmetry(S, mints.petite_list()->aotoso());
-  M->print();
+  //M->print();
+
+  psi::SharedMatrix S2 = mints.ao_overlap(mints.sobasisset(), mints.sobasisset());
+  S2->print();
 
 }
 
