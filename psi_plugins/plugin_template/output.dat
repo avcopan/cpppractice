@@ -1,0 +1,45 @@
+    -----------------------------------------------------------------------
+          Psi4: An Open-Source Ab Initio Electronic Structure Package
+                              Psi4 0.3.71 Driver
+
+                          Git: Rev {master} 47c6ad3 
+
+    J. M. Turney, A. C. Simmonett, R. M. Parrish, E. G. Hohenstein,
+    F. A. Evangelista, J. T. Fermann, B. J. Mintz, L. A. Burns, J. J. Wilke,
+    M. L. Abrams, N. J. Russ, M. L. Leininger, C. L. Janssen, E. T. Seidl,
+    W. D. Allen, H. F. Schaefer, R. A. King, E. F. Valeev, C. D. Sherrill,
+    and T. D. Crawford, WIREs Comput. Mol. Sci. 2, 556-565 (2012)
+    (doi: 10.1002/wcms.93)
+
+                         Additional Contributions by
+    A. E. DePrince, M. Saitow, U. Bozkaya, A. Yu. Sokolov
+    -----------------------------------------------------------------------
+
+
+    Psi4 started on: Tue Sep  1 21:59:28 2015
+
+    Process ID:  27238
+    PSI4DATADIR: /home/avcopan/Documents/code/github//psi4/lib
+    Memory level set to 256.000 MB
+
+  ==> Input File <==
+
+--------------------------------------------------------------------------
+molecule {
+  0 1
+  O
+  H 1 0.9
+  H 1 0.9 2 104.5
+}
+
+set basis sto-3g
+
+psi4.plugin('./plugin_main.so')
+
+--------------------------------------------------------------------------
+Reading options from the PLUGIN_MAIN block
+Calling plugin ./plugin_main.so.
+Hello World!
+nbf = 7
+
+*** PSI4 exiting successfully. Buy a developer a beer!

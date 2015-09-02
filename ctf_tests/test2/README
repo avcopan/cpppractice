@@ -1,5 +1,5 @@
 # compile
-mpicxx -std=c++0x -fopenmp  test.cxx -o test.bin -I$CTF/include/ -L$CTF/lib -lctf -lblas
+mpicxx -std=c++0x -fopenmp  test.cxx -o test.bin -I$GITHUB/ctf/include/ -L$GITHUB/ctf/lib -lctf -lblas
 
 # run
 ./test.bin

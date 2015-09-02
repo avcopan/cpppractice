@@ -1,13 +1,27 @@
+#include <libplugin/plugin.h>
+#include <liboptions/liboptions.h>
+#include <libpsio/psio.hpp>
+
 #include <ctf.hpp>
 
-int main()
+INIT_PLUGIN
+
+extern "C" 
+int read_options(std::string name, psi::Options& options) { return false; }
+
+
+/* PLUGIN MAIN() */
+extern "C" 
+psi::PsiReturnType plugin_main(psi::Options& options)
 {
-  int argc; char** argv;
-  MPI_Init(&argc, &argv);
+
+  /* Your code goes here */
+  /* BEGIN SAMPLE */
+  psi::outfile->Printf("Hello World!\n");
 
   enum SYM : int { NS, SY, AS, SH };
 
-  {CTF::World world(argc, argv);
+  {CTF::World world;
     CTF::Scalar<> scalar(world);
     CTF::Vector<> vector(3, world);
     CTF::Matrix<> matrix(3, 3, SYM::NS, world);
@@ -33,5 +47,5 @@ int main()
     asmten.print(stdout);
   }
 
-  MPI_Finalize();  
+  return psi::Success;
 }

@@ -1,5 +1,5 @@
-# compile -- make sure you export PSI4=/path/to/psi4/ in your .bashrc file (source ~/.bashrc if you didn't have it there already)
-c++ -fPIC -std=c++11 -I$GITHUB/psi4/obj/src/lib -I$GITHUB/psi4/src/lib -I$GITHUB/psi4/include -I$GITHUB/psi4/obj/include -I/usr/include -I/usr/include/python2.7 -I. -c plugin_main.cc
+# compile -- make sure you export $GITHUB=/path/to/dir/before/psi4/
+c++ -fPIC -I$GITHUB/psi4/obj/src/lib -I$GITHUB/psi4/src/lib -I$GITHUB/psi4/include -I$GITHUB/psi4/obj/include -I/usr/include/python2.7 -I. -c plugin_main.cc
 
 # link
 c++ -shared -o plugin_main.so plugin_main.o -L$GITHUB/psi4/obj/lib -lplugin
