@@ -31,9 +31,38 @@ CTF::Tensor<> Integrals::oei_to_ctf_tensor(psi::SharedMatrix M)
   return T;
 }
 
-void Integral::get_eri()
+void Integrals::get_eri()
 {
-  boost::shared_ptr<psi::TwoBodyAOInt> eri(_mints.integral()->eri());
+  int nbf = _mints.nbf();
+  boost::shared_ptr<psi::IntegralFactory> intfactory = _mints.integral();
+
+  std::vector<int64_t> indices;
+  std::vector<double>  values;
+
+  boost::shared_ptr<psi::TwoBodyAOInt> eri(intfactory->eri());
+  const double* buffer = eri->buffer();
+  psi::AOShellCombinationsIterator shell_iter = intfactory->shells_iterator();
+  for(shell_iter.first(); shell_iter.is_done() == false; shell_iter.next())
+  {
+    eri->compute_shell(shell_iter);
+    psi::AOIntegralsIterator int_iter = shell_iter.integrals_iterator();
+    for(int_iter.first(); int_iter.is_done() == false; int_iter.next())
+    {
+      int64_t i = int_iter.i(); int64_t j = int_iter.j(); int64_t k = int_iter.k(); int64_t l = int_iter.l();
+      indices.push_back(i + nbf*j + nbf*nbf*k + nbf*nbf*nbf*l);
+      indices.push_back(k + nbf*l + nbf*nbf*i + nbf*nbf*nbf*j);
+      values.push_back( buffer[int_iter.index()] );
+      values.push_back( buffer[int_iter.index()] );
+    }
+  }
+
+  // now, build and fill CTF::Tensor
+  int dim[] = { nbf, nbf, nbf, nbf };
+  int sym[] = {   1,   0,   1,   0 };
+  CTF::Tensor<> T(4, dim, sym, *_world);
+  T[indices] = values;
+
+  T.print(stdout);
 }
 
 }

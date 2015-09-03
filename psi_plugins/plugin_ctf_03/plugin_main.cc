@@ -23,5 +23,7 @@ psi::PsiReturnType plugin_main(psi::Options& options)
   CTF::Tensor<> T = integrals.ao_kinetic();
   CTF::Tensor<> V = integrals.ao_potential();
 
+  integrals.get_eri();
+
   return psi::Success;
 }
