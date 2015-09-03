@@ -10,5 +10,5 @@ mpicxx -shared -o plugin_main.so plugin_main.o integrals.o -L$GITHUB/ctf/lib -L$
 psi4 input.dat
 
 # clean up
-rm *.o *.so output.dat timer.dat
+rm *.o *.so output.dat timer.dat *.clean
 

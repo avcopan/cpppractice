@@ -3,6 +3,7 @@
 #include <libpsio/psio.hpp>
 
 #include "integrals.h"
+#include <ctf.hpp>
 
 INIT_PLUGIN
 
@@ -16,7 +17,10 @@ psi::PsiReturnType plugin_main(psi::Options& options)
 {
 
   /* Call my code: make UHF obj and ask it to compute something */
-  plugin::Integrals integrals;
+  CTF::World world;
+  plugin::Integrals integrals(world);
+  boost::shared_ptr<CTF::Tensor<> > S = integrals.ao_overlap();
+  S->print(stdout);
 
   return psi::Success;
 }
