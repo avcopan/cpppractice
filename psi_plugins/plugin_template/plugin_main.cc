@@ -17,8 +17,6 @@ psi::PsiReturnType plugin_main(psi::Options& options)
   /* Your code goes here */
   /* BEGIN SAMPLE */
   psi::outfile->Printf("Hello World!\n");
-  psi::MintsHelper mints;
-  psi::outfile->Printf("nbf = %d\n", mints.basisset()->nbf());
   /* END SAMPLE */
 
   return psi::Success;
