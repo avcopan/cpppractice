@@ -1,58 +1,22 @@
 
 Host: hal
 
-Timers On : Thu Sep  3 13:26:26 2015
-Timers Off: Thu Sep  3 13:26:26 2015
+Timers On : Fri Sep  4 13:30:51 2015
+Timers Off: Fri Sep  4 13:30:52 2015
 
-Wall Time:        0.00 seconds
+Wall Time:        1.00 seconds
 
 JK: (A|mn)  :       0.00u       0.00s       0.00w      1 call
-JK: (A|Q)^-1/2:       0.04u       0.39s       0.00w      1 call
+JK: (A|Q)^-1/2:       0.05u       0.43s       0.00w      1 call
 JK: (Q|mn)  :       0.00u       0.00s       0.00w      1 call
-Form H      :       0.00u       0.02s       0.00w      1 call
+Form H      :       0.00u       0.01s       0.00w      1 call
 Form S/X    :       0.00u       0.00s       0.00w      1 call
 Guess       :       0.00u       0.00s       0.00w      1 call
 Form G      :       0.01u       0.01s       0.00w      7 calls
 JK: D       :       0.00u       0.00s       0.00w      7 calls
 JK: USO2AO  :       0.00u       0.00s       0.00w      7 calls
-JK: JK      :       0.01u       0.00s       0.00w      7 calls
-JK: J       :       0.00u       0.00s       0.00w      7 calls
-JK: J1      :       0.00u       0.00s       0.00w      7 calls
-JK: J2      :       0.00u       0.00s       0.00w      7 calls
-JK: K       :       0.01u       0.00s       0.00w      7 calls
-JK: K1      :       0.01u       0.00s       0.00w      7 calls
-JK: K2      :       0.00u       0.00s       0.00w      7 calls
-JK: AO2USO  :       0.00u       0.00s       0.00w      7 calls
-Form F      :       0.00u       0.00s       0.00w      7 calls
-DIIS        :       0.00u       0.01s       0.00w      7 calls
-DIISManager::add_entry:       0.00u       0.00s       0.00w      7 calls
-Form C      :       0.00u       0.00s       0.00w      7 calls
-Form D      :       0.00u       0.00s       0.00w      7 calls
-DIISManager::extrapolate:       0.00u       0.01s       0.00w      6 calls
-DIISManager::extrapolate: bMatrix setup:       0.00u       0.01s       0.00w      6 calls
-DIISManager::extrapolate: bMatrix pseudoinverse:       0.00u       0.00s       0.00w      6 calls
-DIISManager::extrapolate: form new data:       0.00u       0.00s       0.00w      6 calls
-
-***********************************************************
-
-Host: hal
-
-Timers On : Thu Sep  3 13:59:59 2015
-Timers Off: Thu Sep  3 13:59:59 2015
-
-Wall Time:        0.00 seconds
-
-JK: (A|mn)  :       0.00u       0.00s       0.00w      1 call
-JK: (A|Q)^-1/2:       0.03u       0.05s       0.00w      1 call
-JK: (Q|mn)  :       0.00u       0.00s       0.00w      1 call
-Form H      :       0.00u       0.01s       0.00w      1 call
-Form S/X    :       0.00u       0.00s       0.00w      1 call
-Guess       :       0.00u       0.00s       0.00w      1 call
-Form G      :       0.02u       0.00s       0.00w      7 calls
-JK: D       :       0.00u       0.00s       0.00w      7 calls
-JK: USO2AO  :       0.01u       0.00s       0.00w      7 calls
-JK: JK      :       0.01u       0.00s       0.00w      7 calls
-JK: J       :       0.00u       0.00s       0.00w      7 calls
+JK: JK      :       0.01u       0.01s       0.00w      7 calls
+JK: J       :       0.00u       0.01s       0.00w      7 calls
 JK: J1      :       0.00u       0.00s       0.00w      7 calls
 JK: J2      :       0.00u       0.00s       0.00w      7 calls
 JK: K       :       0.01u       0.00s       0.00w      7 calls
@@ -63,42 +27,6 @@ Form F      :       0.00u       0.00s       0.00w      7 calls
 DIIS        :       0.00u       0.00s       0.00w      7 calls
 DIISManager::add_entry:       0.00u       0.00s       0.00w      7 calls
 Form C      :       0.00u       0.01s       0.00w      7 calls
-Form D      :       0.00u       0.00s       0.00w      7 calls
-DIISManager::extrapolate:       0.00u       0.00s       0.00w      6 calls
-DIISManager::extrapolate: bMatrix setup:       0.00u       0.00s       0.00w      6 calls
-DIISManager::extrapolate: bMatrix pseudoinverse:       0.00u       0.00s       0.00w      6 calls
-DIISManager::extrapolate: form new data:       0.00u       0.00s       0.00w      6 calls
-
-***********************************************************
-
-Host: hal
-
-Timers On : Thu Sep  3 14:05:40 2015
-Timers Off: Thu Sep  3 14:05:41 2015
-
-Wall Time:        1.00 seconds
-
-JK: (A|mn)  :       0.00u       0.00s       0.00w      1 call
-JK: (A|Q)^-1/2:       0.02u       0.06s       0.00w      1 call
-JK: (Q|mn)  :       0.00u       0.00s       0.00w      1 call
-Form H      :       0.00u       0.01s       0.00w      1 call
-Form S/X    :       0.00u       0.00s       0.00w      1 call
-Guess       :       0.00u       0.00s       0.00w      1 call
-Form G      :       0.00u       0.00s       0.00w      7 calls
-JK: D       :       0.00u       0.00s       0.00w      7 calls
-JK: USO2AO  :       0.00u       0.00s       0.00w      7 calls
-JK: JK      :       0.00u       0.00s       0.00w      7 calls
-JK: J       :       0.00u       0.00s       0.00w      7 calls
-JK: J1      :       0.00u       0.00s       0.00w      7 calls
-JK: J2      :       0.00u       0.00s       0.00w      7 calls
-JK: K       :       0.00u       0.00s       0.00w      7 calls
-JK: K1      :       0.00u       0.00s       0.00w      7 calls
-JK: K2      :       0.00u       0.00s       0.00w      7 calls
-JK: AO2USO  :       0.00u       0.00s       0.00w      7 calls
-Form F      :       0.00u       0.00s       0.00w      7 calls
-DIIS        :       0.00u       0.00s       0.00w      7 calls
-DIISManager::add_entry:       0.00u       0.00s       0.00w      7 calls
-Form C      :       0.01u       0.02s       0.00w      7 calls
 Form D      :       0.00u       0.00s       0.00w      7 calls
 DIISManager::extrapolate:       0.00u       0.00s       0.00w      6 calls
 DIISManager::extrapolate: bMatrix setup:       0.00u       0.00s       0.00w      6 calls

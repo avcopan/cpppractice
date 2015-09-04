@@ -1,10 +1,10 @@
 # compile -- make sure you export $GITHUB=/path/to/dir/before/psi4/
 # note: CTF must be compiled with ./configure CXXFLAGS="-fPIC"
 #       Psi4 must be compiled with ../setup --mpi
-mpicxx -fPIC -fopenmp -std=c++0x -I$GITHUB/psi4/obj/src/lib -I$GITHUB/ctf/include/ -I$GITHUB/psi4/src/lib -I$GITHUB/psi4/include -I$GITHUB/psi4/obj/include -I/usr/include/python2.7 -I. -c plugin_main.cc integrals.cc
+mpicxx -fPIC -fopenmp -std=c++0x -I$GITHUB/psi4/obj/src/lib -I$GITHUB/ctf/include/ -I$GITHUB/psi4/src/lib -I$GITHUB/psi4/include -I$GITHUB/psi4/obj/include -I/usr/include/python2.7 -I. -c plugin_main.cc orbitals.cc
 
 # link
-mpicxx -shared -o plugin_main.so plugin_main.o integrals.o -L$GITHUB/ctf/lib -L$GITHUB/psi4/obj/lib -lplugin -lctf
+mpicxx -shared -o plugin_main.so plugin_main.o orbitals.o -L$GITHUB/ctf/lib -L$GITHUB/psi4/obj/lib -lplugin -lctf
 
 # run -- input must call  psi4.plugin('./plugin_main.so')
 psi4 input.dat

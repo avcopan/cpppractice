@@ -1,14 +1,15 @@
 #include <ctf.hpp>
-#include <libmits/mints.h>
+#include <boost/shared_ptr.hpp>
+#include <libmints/mints.h>
 
 namespace plugin {
 
 class Orbitals {
   private:
-    boost::shared_ptr<psi::Wavefunction> wfn;
-    CTF::World * _world;
+    boost::shared_ptr<CTF::World>        _world;
+    boost::shared_ptr<psi::Wavefunction> _wfn;
   public:
-    Orbitals(CTF::World&, boost::shared_ptr<psi::Wavefunction>);
+    Orbitals(boost::shared_ptr<CTF::World>, boost::shared_ptr<psi::Wavefunction>);
 };
 
 }
