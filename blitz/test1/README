@@ -1,0 +1,22 @@
+# matmult1.cpp
+# example of basic blitz++ functionality
+
+# compile
+c++ -I$GITHUB/blitz matmult1.cpp -o matmult1.bin
+
+# run
+./matmult1.bin
+
+
+
+# matmult2.cpp
+# same as matmult1.cpp, but with comments stripped out for readability
+
+# compile
+c++ -I$GITHUB/blitz matmult2.cpp -o matmult2.bin
+
+# run
+./matmult2.bin
+
+
+
