@@ -1,0 +1,8 @@
+# hf.cc
+
+# compile using
+c++ -std=c++11 -I$GITHUB/ambit/include -o hf.o -c hf.cc
+
+# link using
+c++ -std=c++11 hf.o -o hf.bin $GITHUB/ambit/obj/src/libambit.so
+

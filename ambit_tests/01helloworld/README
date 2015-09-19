@@ -1,0 +1,8 @@
+# helloworld.cc
+
+# compile using
+c++ -std=c++11 -I$GITHUB/ambit/include -o helloworld.o -c helloworld.cc
+
+# link using
+c++ -std=c++11 helloworld.o -o helloworld.bin $GITHUB/ambit/obj/src/libambit.so
+
