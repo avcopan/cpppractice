@@ -14,8 +14,6 @@ int main(int argc, char* argv[])
   int occ;  psif_chkpt.read("::Closed shells per irrep", &occ, 1);  size_t nocc = occ;
 
   // read one and two electron integrals from file PSIF_OEI = 35 and PSIF_TEI = 33
-  ambit::Dimension rank2 = {norb, norb};
-  ambit::Dimension rank4 = {norb, norb, norb, norb};
   ambit::Tensor S = ambit::Tensor::build(ambit::kCore, "Overlap"     , {norb,norb}          );
   ambit::Tensor T = ambit::Tensor::build(ambit::kCore, "Kinetic"     , {norb,norb}          );
   ambit::Tensor V = ambit::Tensor::build(ambit::kCore, "Potential"   , {norb,norb}          );

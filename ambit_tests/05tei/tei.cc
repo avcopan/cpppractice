@@ -9,11 +9,10 @@ int main(int argc, char* argv[])
 
   // read dimension of one-e basis from file PSIF_CHKPT = 32
   ambit::io::File psif_chkpt("jobdata/psi.file.32", ambit::io::kOpenModeOpenExisting);
-  int nso;  psif_chkpt.read("::Num. SO", &nso, 1);  size_t dim = nso;
+  int nso;  psif_chkpt.read("::Num. SO", &nso, 1);  size_t norb = nso;
 
   // read two electron integrals from file PSIF_TEI = 33
-  ambit::Dimension rank4 = {dim, dim, dim, dim};
-  ambit::Tensor G = ambit::Tensor::build(ambit::kCore, "Two-electron", rank4);
+  ambit::Tensor G = ambit::Tensor::build(ambit::kCore, "Two-electron", {norb,norb,norb,norb});
   ambit::helpers::psi4::load_iwl("jobdata/psi.file.33", G);
   G.print();
 
