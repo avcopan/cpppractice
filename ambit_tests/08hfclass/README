@@ -1,0 +1,8 @@
+# main.cc
+
+# compile using
+c++ -std=c++11 -I$GITHUB/ambit/include -c main.cc rhf.cc
+
+# link using
+c++ -std=c++11 main.o rhf.o -o main.bin $GITHUB/ambit/obj/src/libambit.so
+
