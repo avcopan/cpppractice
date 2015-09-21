@@ -41,16 +41,19 @@ int main(int argc, char* argv[])
 
   for(int iter = 0; iter < 100; ++iter)
   {
-    F ("mu,nu")  = H("mu,nu");
-    F ("mu,nu") += D("rh,si") * ( 2.0 * G("mu,nu,rh,si") - G("mu,rh,nu,si") );
+    // build Fock matrix from density matrix, starting from core guess D = 0
+    F("mu,nu")  = H("mu,nu");
+    F("mu,nu") += D("rh,si") * ( 2.0 * G("mu,nu,rh,si") - G("mu,rh,nu,si") );
+    // transform
     xF("mu,nu")  = X("mu,rh") * F("rh,si") * X("si,nu");  // @REQUEST: overload % as matmul
-    xC = xF.syev(ambit::kAscending)["eigenvectors"];      // @REQUEST: diagonalization routine that returns eigenvectors by column
-    C ("mu,p")   = X("mu,nu") * xC("p,nu"); // note that we're transposing the eigenvectors during the backtransformation
+    // diagonalize                                        // @REQUEST: diagonalization routine that returns eigenvectors by column
+    xC("mu,nu")  = xF.syev(ambit::kAscending)["eigenvectors"]("nu,mu");
+    // backtransform
+    C("mu,p")   = X("mu,nu") * xC("nu,p");
+    // build density matrix
     oC({{0L,norb},{0L,nocc}}) = C({{0L,norb},{0L,nocc}}); // @REQUEST: WTF this has to be the ugliest way of slicing in the universe
-                                                          //           should be able to do oC = C(all, {0L,nocc})
-                                                          //           or at least oC = C.slice(all, {0L,nocc})
-    D ("mu,nu")  = oC("mu,i") * oC("nu,i");
-
+    D("mu,nu")  = oC("mu,i") * oC("nu,i");                //           should be able to do oC = C(all, {0L,nocc})
+    // comute energy and check convergence                //           or at least oC = C.slice(all, {0L,nocc})
     E = D("mu,nu") * ( H("mu,nu") + F("mu,nu") ) + Enuc;
     ambit::print("@RHF-%-3d %20.15f %20.15f\n", iter, E, E - E0);
     if(std::fabs(E - E0) < 1.0e-12) break;

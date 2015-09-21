@@ -1,0 +1,8 @@
+# access.cc
+
+# compile using
+c++ -std=c++11 -I$GITHUB/ambit/include -c access.cc
+
+# link using
+c++ -std=c++11 access.o -o access.bin $GITHUB/ambit/obj/src/libambit.so
+

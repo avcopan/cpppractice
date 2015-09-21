@@ -1,0 +1,8 @@
+# mem.cc
+
+# compile using
+c++ -std=c++11 -I$GITHUB/ambit/include -c mem.cc
+
+# link using
+c++ -std=c++11 mem.o -o mem.bin $GITHUB/ambit/obj/src/libambit.so
+

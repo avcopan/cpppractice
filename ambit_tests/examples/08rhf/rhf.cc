@@ -26,9 +26,8 @@ RHF::RHF(const std::string& file32path, const std::string& file33path, const std
   _F = ambit::Tensor::build(ambit::kCore, "Fock"            , {_norb,_norb});
   _C = ambit::Tensor::build(ambit::kCore, "MO Coeffs"       , {_norb,_norb});
   _D = ambit::Tensor::build(ambit::kCore, "Density"         , {_norb,_norb});
-  _X = S.power(-0.5);                     // @REQUEST: implement power for ambit::BlockedTensor
-  _H("mu,nu")  = T("mu,nu") + V("mu,nu"); // @REQUEST: overload + - * / for unlabeled tensors as element-wise operations
-                                          // @REQUEST: make string-free contract() function with tensordot-like arguments
+  _X = S.power(-0.5);
+  _H("mu,nu")  = T("mu,nu") + V("mu,nu");
 }
 
 double RHF::compute_energy()
@@ -41,19 +40,20 @@ double RHF::compute_energy()
 
   for(int iter = 0; iter < 100; ++iter)
   {
+    // build Fock matrix from density matrix, starting from core guess _D = 0
     _F("mu,nu")  = _H("mu,nu");
     _F("mu,nu") += _D("rh,si") * ( 2.0 * _G("mu,nu,rh,si") - _G("mu,rh,nu,si") );
-    xF("mu,nu")  = _X("mu,rh") * _F("rh,si") * _X("si,nu");             // @REQUEST: overload % as matmul
-    xC("mu,nu")  = xF.syev(ambit::kAscending)["eigenvectors"]("nu,mu"); // @REQUEST: diagonalization routine that returns
-                                                                        //           eigenvectors by column
+    // transform
+    xF("mu,nu")  = _X("mu,rh") * _F("rh,si") * _X("si,nu");
+    // diagonalize
+    xC("mu,nu")  = xF.syev(ambit::kAscending)["eigenvectors"]("nu,mu");
+    // backtransform
     _C("mu,p")   = _X("mu,nu") * xC("nu,p");
-    oC({{0L,_norb},{0L,_nocc}}) = _C({{0L,_norb},{0L,_nocc}}); // @REQUEST: WTF this has to be the ugliest way of slicing in the universe
-                                                               //           should be able to do oC = C(all, {0L,nocc})
-                                                               //           or at least oC = C.slice(all, {0L,nocc})
+    // build density matrix
+    oC({{0L,_norb},{0L,_nocc}}) = _C({{0L,_norb},{0L,_nocc}});
     _D("mu,nu")  = oC("mu,i") * oC("nu,i");
-
+    // comute energy and check convergence
     _E = _D("mu,nu") * ( _H("mu,nu") + _F("mu,nu") ) + _Enuc;
-
     ambit::print("@RHF-%-3d %20.15f %20.15f\n", iter, _E, _E - E);
     if(std::fabs(_E - E) < 1.0e-12) break;  E = _E;
   }
