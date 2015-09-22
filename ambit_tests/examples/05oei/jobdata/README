@@ -1,0 +1,10 @@
+# In order to generate Psi files for a given system, edit input.dat to
+# run the molecule/basisset combination of your choice and then run psi4.
+
+# See path/to/psi4/include/psifiles.h for the Psi file numbering code.
+
+# After running input.dat, you will need to rename the files as follows:
+#   mv psi.[system job number].[psi file no.] psi.file.[psi file no.]
+# e.g.
+#   mv psi.5302.32 psi.file.32
+# for file 32

@@ -1,8 +1,0 @@
-# oei.cc
-
-# compile using
-c++ -std=c++11 -I$GITHUB/ambit/include -o oei.o -c oei.cc
-
-# link using
-c++ -std=c++11 oei.o -o oei.bin $GITHUB/ambit/obj/src/libambit.so
-

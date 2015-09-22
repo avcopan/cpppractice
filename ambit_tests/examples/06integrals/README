@@ -1,8 +1,0 @@
-# integrals.cc
-
-# compile using
-c++ -std=c++11 -I$GITHUB/ambit/include -o integrals.o -c integrals.cc
-
-# link using
-c++ -std=c++11 integrals.o -o integrals.bin $GITHUB/ambit/obj/src/libambit.so
-

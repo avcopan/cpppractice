@@ -1,8 +1,0 @@
-# tei.cc
-
-# compile using
-c++ -std=c++11 -I$GITHUB/ambit/include -o tei.o -c tei.cc
-
-# link using
-c++ -std=c++11 tei.o -o tei.bin $GITHUB/ambit/obj/src/libambit.so
-

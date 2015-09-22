@@ -1,8 +1,0 @@
-# read.cc
-
-# compile using
-c++ -std=c++11 -I$GITHUB/ambit/include -o read.o -c read.cc
-
-# link using
-c++ -std=c++11 read.o -o read.bin $GITHUB/ambit/obj/src/libambit.so
-

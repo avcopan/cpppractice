@@ -1,5 +1,5 @@
-#include <ambit/print.h>
-#include <ambit/tensor.h>
+#include <ambit/print.h>  // ambit::print
+#include <ambit/tensor.h> // ambit::initialize, ambit::finalize
 
 int main(int argc, char* argv[])
 {
