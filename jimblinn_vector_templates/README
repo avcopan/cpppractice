@@ -1,0 +1,28 @@
+# vec_v1a.cpp
+
+# compile
+c++ vec_v1a.cpp -o vec_v1a.bin
+
+# link
+./vec_v1a.bin
+
+
+# vec_v1b.cpp
+
+# compile
+c++ vec_v1b.cpp -o vec_v1b.bin
+
+# run
+./vec_v1b.bin
+
+
+# vec_v2.cpp
+
+# compile
+c++ vec_v2.cpp -o vec_v2.bin
+
+# run
+./vec_v2.bin
+
+
+
