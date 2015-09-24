@@ -25,4 +25,38 @@ c++ vec_v2.cpp -o vec_v2.bin
 ./vec_v2.bin
 
 
+# vec_v3.cpp
+
+# compile
+c++ vec_v3.cpp -o vec_v3.bin
+
+# run
+./vec_v3.bin
+
+
+# vec_v4a.cpp
+
+# compile
+c++ vec_v4a.cpp -o vec_v4a.bin
+
+# run
+./vec_v4a.bin
+
+
+# vec_v4b.cpp
+
+# compile
+c++ vec_v4b.cpp -o vec_v4b.bin
+
+# run
+./vec_v4b.bin
+
+
+# vec_v4c.cpp
+
+# compile
+c++ vec_v4c.cpp -o vec_v4c.bin
+
+# run
+./vec_v4c.bin
 
