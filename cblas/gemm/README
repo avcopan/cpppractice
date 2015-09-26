@@ -1,0 +1,19 @@
+# dgemm.cpp
+# Basic matrix-multiply using CBLAS
+
+# compile & link
+c++ dgemm.cpp -o dgemm.bin -lblas
+
+# run
+./dgemm.bin
+
+
+# shareddgemm.cpp
+# Testing to see if one can use DGEMM with shared_ptrs
+# -- it works!
+
+# compile & link
+c++ shareddgemm.cpp -I/usr/include/boost -lblas -o shareddgemm.bin
+
+# run
+./shareddgemm.bin

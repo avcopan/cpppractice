@@ -1,0 +1,19 @@
+# mat.cpp
+# basic matrix container -- allows getting and setting elements via multi-indexing
+
+# compile
+c++ mat.cpp -o mat.bin
+
+# run
+./mat.bin
+
+
+# sharedmat.cpp
+# same as mat.cpp, but using shared ptrs for easy copying and memory handling
+# -- not sured how that affects efficiency
+
+# compile
+c++ -I/usr/include/boost sharedmat.cpp -o sharedmat.bin
+
+# run
+./sharedmat.bin
