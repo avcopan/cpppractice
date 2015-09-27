@@ -40,13 +40,13 @@ class Mult {
     Mult(const L& l, const R& r, const Shape* s)
       : _l(l), _r(r), _s(s)       {;}
     T operator[](int i) const     {return _l[i] * _r[i];}
-    const Shape *shapePtr() const {return s;}
+    const Shape *shape() const {return s;}
 };
 // which might be used as
 Array<float> A, B, C;
-//   dtype  Larray                  Rarray
-Mult<float, float*                , float*> AxB  (A.begin(), B.begin(), B.shapePtr());
-Mult<float, Mult<float,float,int*>, float*> AxBxC(AxB      , C.begin(), C.shapePtr());
+//   dtype  Larray                     Rarray
+Mult<float, float*                   , float*> AxB  (A.begin(), B.begin(), B.shape());
+Mult<float, Mult<float,float*,float*>, float*> AxBxC(AxB      , C.begin(), C.shape());
 // Note that, at this point, the multiplied array has not been
 // not been formed -- however, calling operator[] on AxBxC returns
 // elements of the product.
@@ -64,3 +64,23 @@ class Exp {
     const Shape *shape() const                     {return _s;}
 };
 
+// Rather than performing an operation and storing the result in
+// an intermediate, have compiler generate inline functions that
+// overload operator* to make expression objects that are evaluated
+// only when operator= is called.
+template<class T>
+inline Expression<T,Mult<T,T*,T*> >
+operator*(const Array<T>& L, const Array<T>& R)  {return Mult<T,T*,T*>(L, R, L.shape());}
+
+template<class T, class V>
+class Expression {
+  private:
+    V _v;
+  public:
+    Expression(const V& v) : _v(v) {;}
+    T operator[](int i) const      {return _v[i];}
+    const Shape *shape() const     {return _v.shape();}
+};
+
+// Note to self: for ndarrays, need an iterator that will sum
+// over all elements of the array in correct order.
