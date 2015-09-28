@@ -1,0 +1,11 @@
+# 00vec.cpp
+# vector class with basic element access
+# automatic memory handling via boost::shared_ptr
+
+# compile
+c++ 00vec.cpp -I/usr/include/boost -o 00vec.bin
+
+# run
+./00vec.bin
+
+
