@@ -1,0 +1,23 @@
+# arr_with_braces.cpp
+# using std::vector<int>s for indexing -- i.e. T({i,j,k})
+# presumably not very efficient
+
+# compile
+c++ -std=c++11 arr_with_braces.cpp -o arr_with_braces.bin
+
+# run
+./arr_with_braces.bin
+
+
+# arr_itertools.cpp
+# same as arr_with_braces.cpp, except I'm trying a std::initializer_list<int>
+# and using cppitertools/zip.hpp to loop over zip(tensor_index, _stride)
+# I should be able to loop over the zipped iterator with auto&& pair, but
+# for some reason it throws an error unless I do just auto pair
+
+# compile
+c++ -std=c++11 -I$GITHUB arr_itertools.cpp -o arr_itertools.bin
+
+# run
+./arr_itertools.bin
+

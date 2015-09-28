@@ -1,0 +1,9 @@
+# zip.cpp
+# trying out iter::zip from cppitertools
+
+# compile
+c++ -std=c++11 -I$GITHUB zip.cpp -o zip.bin
+
+# run
+./zip.bin
+

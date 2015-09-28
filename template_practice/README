@@ -1,0 +1,16 @@
+# variadic_constructor.cpp
+
+# compile
+c++ -std=c++11 variadic_constructor.cpp -o variadic_constructor.bin
+
+# run
+./variadic_constructor.bin
+
+
+# variadic_sum.cpp
+
+# compile
+c++ -std=c++11 variadic_sum00.cpp -o variadic_sum00.bin
+
+# run
+./variadic_sum00.bin

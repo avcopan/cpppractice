@@ -1,12 +1,14 @@
 #include <boost/shared_ptr.hpp>
 #include <vector>
+#include <cppitertools/zip.hpp>
+#include <tuple> // provides std::get<i>(tuple) on the return value of iter::zip()
 
 #include <iostream>
 #include <iomanip>
 
 
 template<class T>
-void print(const std::vector<T>& v)
+void print(const T& v)
 {
   for(auto it = v.begin(); it != v.end(); ++it)
     std::cout << std::setw(4) << *it;
@@ -29,11 +31,30 @@ class Tensor {
       _array = boost::shared_ptr<dtype[]>(new dtype[_size]);
     }
 
-    // element access
-    template<typename... Args>
-    dtype operator()(int i, Args... other)
+    dtype  operator()(const std::initializer_list<int>& tensor_index) const
     {
-      return *this(other...);
+      int global_index = 0;
+      for(auto pair : iter::zip(tensor_index, _stride))
+        global_index += std::get<0>(pair) * std::get<1>(pair);
+      return _array[global_index];
+    }
+
+    dtype& operator()(const std::initializer_list<int>& tensor_index)
+    {
+      int global_index = 0;
+      for(auto pair : iter::zip(tensor_index, _stride))
+        global_index += std::get<0>(pair) * std::get<1>(pair);
+      return _array[global_index];
+    }
+
+    dtype  operator[](int global_index) const
+    {
+      return _array[global_index];
+    }
+
+    dtype& operator[](int global_index)
+    {
+      return _array[global_index];
     }
 };
 
@@ -44,8 +65,10 @@ int main()
   Tensor<double> T({5,5,5});
   Tensor<double> A({10,6,8,11});
 
-  print( T.get_tensor_index(73) );
-  std::cout << T.get_global_index(T.get_tensor_index(73)) << std::endl;
+  int i=1, j=2, k=3;
+
+  T({i,j,k}) = 5.0;
+  std::cout << T[i*25+j*5+k] << std::endl;
 }
 
 
