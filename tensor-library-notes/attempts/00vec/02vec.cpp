@@ -5,53 +5,33 @@
 
 #include <stdexcept>
 
-namespace bst = boost;
-
 class Slice {
-    int _start, _stop, _stride;
   public:
-    Slice(int start, int stop, int stride = 1) : _start(start), _stop(stop), _stride(stride) {;}
-    int start()  const {return _start ;}
-    int stop()   const {return _stop  ;}
-    int stride() const {return _stride;}
+    int start, stop, stride;
+    Slice(int strt, int stp, int strd = 1) : start(strt), stop(stp), stride(strd) {;}
+    int shape() {return (stop - start) / stride + ((stop - start) % stride ? 1 : 0);}
 };
 
 class Vector {
   private:
+    typedef boost::shared_ptr<double[]> Array;
     // attributes
     int _shape, _stride, _offset;
     // data container
-    bst::shared_ptr<double[]> _array;
+    Array _array;
     // detailed constructor
-    Vector(bst::shared_ptr<double[]> array, int shape, int stride, int offset)
+    Vector(Array array, int shape, int stride, int offset)
     : _array(array), _shape(shape), _stride(stride), _offset(offset) {;}
   public:
-    // constructors
-    Vector(int shape) : _shape(shape), _stride(1), _offset(0) {
-      _array = bst::shared_ptr<double[]>(new double[_offset + _shape*_stride]);
-    }
-    Vector(int shape, int stride, int offset)
-    : _shape(shape), _stride(stride), _offset(offset) {
-      _array = bst::shared_ptr<double[]>(new double[_offset + _shape*_stride]);
-    }
+    // public constructor
+    Vector(int shape, int stride=1, int offset=0)
+    : _shape(shape), _stride(stride), _offset(offset) {_array = Array(new double[_offset + _shape*_stride]);}
     // element access
-    double  operator()(int index) const {return _array[_offset + _stride*index];}
-    double& operator()(int index)       {return _array[_offset + _stride*index];}
+    double  operator()(int i) const {return _array[_offset + _stride * i];}
+    double& operator()(int i)       {return _array[_offset + _stride * i];}
     // slice access
-    Vector  operator()(Slice slice) const
-    {
-      int start = slice.start(), stop = slice.stop(), stride = slice.stride();
-      int shape = (stop - start) / stride + ( ( stop - start ) % stride ? 1 : 0 );
-      Vector v(_array, shape, stride, start);
-      return v;
-    }
-    Vector  operator()(Slice slice)
-    {
-      int start = slice.start(), stop = slice.stop(), stride = slice.stride();
-      int shape = (stop - start) / stride + ( ( stop - start ) % stride ? 1 : 0 );
-      Vector v(_array, shape, stride, start);
-      return v;
-    }
+    Vector  operator()(Slice s) const {return Vector(_array, s.shape(), s.stride, s.start);}
+    Vector  operator()(Slice s)       {return Vector(_array, s.shape(), s.stride, s.start);}
     // operator=
     Vector& operator=(const Vector& other)
     {
