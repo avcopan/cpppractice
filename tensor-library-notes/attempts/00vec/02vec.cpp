@@ -14,11 +14,10 @@ class Slice {
 
 class Vector {
   private:
-    typedef boost::shared_ptr<double[]> Array;
+    // data container
+    typedef boost::shared_ptr<double[]> Array;  Array _array;
     // attributes
     int _shape, _stride, _offset;
-    // data container
-    Array _array;
     // detailed constructor
     Vector(Array array, int shape, int stride, int offset)
     : _array(array), _shape(shape), _stride(stride), _offset(offset) {;}
@@ -26,11 +25,9 @@ class Vector {
     // public constructor
     Vector(int shape, int stride=1, int offset=0)
     : _shape(shape), _stride(stride), _offset(offset) {_array = Array(new double[_offset + _shape*_stride]);}
-    // element access
-    double  operator()(int i) const {return _array[_offset + _stride * i];}
-    double& operator()(int i)       {return _array[_offset + _stride * i];}
-    // slice access
-    Vector  operator()(Slice s) const {return Vector(_array, s.shape(), s.stride, s.start);}
+    // element and slice access
+    double  operator()(int   i) const {return _array[_offset + _stride * i];}
+    double& operator()(int   i)       {return _array[_offset + _stride * i];}
     Vector  operator()(Slice s)       {return Vector(_array, s.shape(), s.stride, s.start);}
     // operator=
     Vector& operator=(const Vector& other)
