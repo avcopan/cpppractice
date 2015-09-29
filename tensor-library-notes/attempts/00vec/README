@@ -19,14 +19,14 @@ c++ 01vec.cpp -I/usr/include/boost -o 01vec.bin
 ./01vec.bin
 
 
-# 02vec.cpp
-# tried to overload operator() with a read-access slice function -- seems to be
-# semi-working
+# 02slice.cpp
+# overloaded operator() with slice access -- seems to be
+# working, as far as I can tell
 
 # compile
-c++ 02vec.cpp -I/usr/include/boost -o 02vec.bin
+c++ 02slice.cpp -I/usr/include/boost -o 02slice.bin
 
 # run
-./02vec.bin
+./02slice.bin
 
 
