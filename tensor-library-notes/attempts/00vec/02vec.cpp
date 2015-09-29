@@ -3,6 +3,8 @@
 #include <iostream>
 #include <iomanip>
 
+#include <stdexcept>
+
 namespace bst = boost;
 
 class Slice {
@@ -35,20 +37,31 @@ class Vector {
     // element access
     double  operator()(int index) const {return _array[_offset + _stride*index];}
     double& operator()(int index)       {return _array[_offset + _stride*index];}
-    // slice read access
+    // slice access
     Vector  operator()(Slice slice) const
     {
       int start = slice.start(), stop = slice.stop(), stride = slice.stride();
       int shape = (stop - start) / stride + ( ( stop - start ) % stride ? 1 : 0 );
-      std::cout << "shape: " << shape << std::endl;
       Vector v(_array, shape, stride, start);
       return v;
     }
+    Vector  operator()(Slice slice)
+    {
+      int start = slice.start(), stop = slice.stop(), stride = slice.stride();
+      int shape = (stop - start) / stride + ( ( stop - start ) % stride ? 1 : 0 );
+      Vector v(_array, shape, stride, start);
+      return v;
+    }
+    // operator=
+    Vector& operator=(const Vector& other)
+    {
+      if(_shape != other._shape) throw std::invalid_argument("Cannot apply operator= to vectors with distinct shapes.");
+      for(int i=0; i<_shape; ++i)
+        (*this)(i) = other(i);
+      return *this;
+    }
     // print function
     void print() const {for(int i=0; i<_shape; ++i) std::cout << std::setw(3) << (*this)(i); std::cout << std::endl;}
-
-// @DEBUG
-void print_full() {for(int i=0; i<_offset + _shape*_stride; ++i) std::cout << std::setw(3) << _array[i]; std::cout << std::endl;}
 };
 
 int main()
@@ -56,11 +69,21 @@ int main()
   Vector v(5);
   v(0) = 0; v(1) = 1; v(2) = 2; v(3) = 3; v(4) = 4;
   v.print();
-  v.print_full();
-
+  v(Slice(4,-1,-1)).print();
   v(Slice(2,5)).print();
-  v(Slice(2,5)).print_full();
-
   v(Slice(2,5,2)).print();
-  v(Slice(2,5,2)).print_full();
+
+  Vector u = v(Slice(2,5));
+  u.print();
+
+  u(0) = 11; u(1) = 13; u(2) = 17;
+
+  u.print();
+  v.print();
+
+  Vector w(6);
+  w(0) = 0; w(1) = 1; w(2) = 2; w(3) = 3; w(4) = 4; w(5) = 5;
+  w.print();
+  w(Slice(5,0,-2)) = w(Slice(0,5,2));
+  w.print();
 }

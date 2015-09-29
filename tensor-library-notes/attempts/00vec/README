@@ -9,3 +9,24 @@ c++ 00vec.cpp -I/usr/include/boost -o 00vec.bin
 ./00vec.bin
 
 
+# 01vec.cpp
+# introduced _offset for returning sliced vectors
+
+# compile
+c++ 01vec.cpp -I/usr/include/boost -o 01vec.bin
+
+# run
+./01vec.bin
+
+
+# 02vec.cpp
+# tried to overload operator() with a read-access slice function -- seems to be
+# semi-working
+
+# compile
+c++ 02vec.cpp -I/usr/include/boost -o 02vec.bin
+
+# run
+./02vec.bin
+
+
