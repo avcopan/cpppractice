@@ -1,0 +1,2 @@
+# introspection.cpp
+clang++-3.6 -std=c++14 -I$GITHUB/hana/include introspection.cpp -o introspection.bin
