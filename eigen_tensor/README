@@ -1,0 +1,6 @@
+# 01.cpp
+c++ -I$GITHUB/eigen 01.cpp -o 01.bin
+
+# 02.cpp
+c++ -std=c++11 -I$GITHUB/eigen -I$GITHUB/eigen/unsupported 02.cpp -o 02.bin
+
