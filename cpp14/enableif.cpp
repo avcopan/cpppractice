@@ -2,20 +2,22 @@
 #include <type_traits>
 
 // variadic function -- swallows anything that falls through the cracks during overload resolution
-int func(...  ) {return 0;}
+int     func(...  ) {return 0;}
 
 // function overload to capture calls with a single float argument
-int func(float) {return 1;}
+int     func(float) {return 1;}
 
 // templated function using std::enable_if to capture integral types (bool, int, char, ...)
 template<typename T>
-typename std::enable_if<std::is_integral<T>::value,int>::type func(T) {return 2;}
-// this illustrates SFINAE:
+typename std::enable_if<std::is_integral<T>::value, int>::type 
+/*int*/ func(T    ) {return 2;}
+
 //   If the first template argument of std::enable_if (type 'bool') is not satisfied
 //   when 'type' is substituted for T, this generates a compile error inside the
 //   template.  Rather than quitting upon encountering this *substitution failure*,
 //   the compiler drops the template from the overload set that it's building.
 //   ==> the acronym SFINAE (substitution failure is not an error)
+
 /*
   reference:
 
