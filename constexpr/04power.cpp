@@ -26,4 +26,11 @@ int main() {
   constexpr double m = compute_power(1.01,-499);
   std::cout << n << std::endl;
   std::cout << m << std::endl;
+
+  static_assert(// compute at compile time
+    compute_power(2.0, 0) ==  1.0    , "Yipe!");
+  static_assert(
+    compute_power(2.0, 5) == 32.0    , "Yipe!");
+  static_assert(
+    compute_power(2.0,-5) ==  0.03125, "Yipe!");
 }
