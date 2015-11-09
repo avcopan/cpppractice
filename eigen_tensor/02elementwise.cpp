@@ -1,5 +1,5 @@
 #include <iostream>
-#include <Eigen/CXX11/Tensor>
+#include "Eigen/Tensor.h"
 
 // DEFAULT FORMAT IS Eigen::ColumnMajor -- in general, that should be used instead of Eigen::RowMajor
 

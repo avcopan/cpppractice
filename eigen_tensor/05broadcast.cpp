@@ -1,6 +1,6 @@
 #include <iostream>
 #include <array>
-#include <Eigen/CXX11/Tensor>
+#include "Eigen/Tensor.h"
 
 int main() {
   Eigen::Tensor<float, 1> a(5); a.setValues({ 1.f, 2.f, 3.f, 4.f, 5.f});

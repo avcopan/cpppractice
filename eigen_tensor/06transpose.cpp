@@ -1,6 +1,6 @@
 #include <iostream>
 #include <array>
-#include <Eigen/CXX11/Tensor>
+#include "Eigen/Tensor.h"
 
 int main() {
   Eigen::Tensor<float, 3> a(2,3,4);
@@ -21,4 +21,5 @@ int main() {
   std::cout << b << std::endl;
   std::cout << c << std::endl;
   std::cout << d << std::endl;
+
 }
