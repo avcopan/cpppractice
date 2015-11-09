@@ -1,0 +1,6 @@
+<map id="Eigen::internal::special_scalar_op_base&lt; Derived, Scalar, OtherScalar, BaseType, EnableIt &gt;" name="Eigen::internal::special_scalar_op_base&lt; Derived, Scalar, OtherScalar, BaseType, EnableIt &gt;">
+<area shape="rect" id="node3" href="$struct_eigen_1_1internal_1_1special__scalar__op__base.html" title="Eigen::internal::special\l_scalar_op_base\&lt; Derived,\l internal::traits\&lt; Derived\l \&gt;::Scalar, NumTraits\&lt; internal\l::traits\&lt; Derived \&gt;::Scalar \&gt;\l::Real, DenseCoeffsBase\&lt; Derived \&gt; \&gt;" alt="" coords="619,43,872,143"/>
+<area shape="rect" id="node4" href="$class_eigen_1_1_dense_base.html" title="Base class for all dense matrices, vectors, and arrays. " alt="" coords="923,80,1123,107"/>
+<area shape="rect" id="node5" href="$class_eigen_1_1_array_base.html" title="Base class for all 1D and 2D array, and related expressions. " alt="" coords="1174,51,1367,77"/>
+<area shape="rect" id="node6" href="$class_eigen_1_1_matrix_base.html" title="Base class for all dense matrices, vectors, and expressions. " alt="" coords="1202,102,1339,143"/>
+</map>

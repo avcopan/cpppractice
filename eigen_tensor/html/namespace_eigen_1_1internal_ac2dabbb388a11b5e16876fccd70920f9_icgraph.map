@@ -1,0 +1,9 @@
+<map id="Eigen::internal::manage_caching_sizes_helper" name="Eigen::internal::manage_caching_sizes_helper">
+<area shape="rect" id="node2" href="$namespace_eigen_1_1internal.html#aa32f9fb4cd20f86ef87d00db101e2f7c" title="Eigen::internal::manage\l_caching_sizes" alt="" coords="214,114,373,155"/>
+<area shape="rect" id="node3" href="$namespace_eigen_1_1internal.html#a97d4b3b82faeddbb2630b38633651906" title="Eigen::internal::evaluate\lProductBlockingSizesHeuristic" alt="" coords="421,5,624,46"/>
+<area shape="rect" id="node4" href="$namespace_eigen.html#a2669f89ff38296a38e6d973552eb4e33" title="Eigen::l1CacheSize" alt="" coords="454,71,591,97"/>
+<area shape="rect" id="node5" href="$namespace_eigen.html#a2cfc0330ba567d63a496be1cac8427ae" title="Eigen::l2CacheSize" alt="" coords="454,121,591,148"/>
+<area shape="rect" id="node6" href="$namespace_eigen.html#ae64421554aa0a4bf9258bafe3170102b" title="Eigen::setCpuCacheSizes" alt="" coords="435,172,611,199"/>
+<area shape="rect" id="node7" href="$namespace_eigen.html#a820c0e0460934cc17eb6dacbad54a9f5" title="Eigen::initParallel" alt="" coords="461,223,584,249"/>
+<area shape="rect" id="node8" href="$namespace_eigen_1_1internal.html#a71925e95a76b2a8433aec7a3d74a4004" title="Eigen::internal::parallelize_gemm" alt="" coords="673,223,887,249"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="Eigen::internal::manage_multi_threading" name="Eigen::internal::manage_multi_threading">
+<area shape="rect" id="node2" href="$namespace_eigen.html#a820c0e0460934cc17eb6dacbad54a9f5" title="Eigen::initParallel" alt="" coords="225,5,348,32"/>
+<area shape="rect" id="node4" href="$namespace_eigen.html#a9aca97d83e21b91a04ec079360dfffeb" title="Eigen::nbThreads" alt="" coords="225,56,349,83"/>
+<area shape="rect" id="node5" href="$namespace_eigen.html#af9cd17c2fe18204239cd11c88c120b50" title="Eigen::setNbThreads" alt="" coords="214,107,359,133"/>
+<area shape="rect" id="node3" href="$namespace_eigen_1_1internal.html#a71925e95a76b2a8433aec7a3d74a4004" title="Eigen::internal::parallelize_gemm" alt="" coords="409,31,623,57"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$struct_eigen_1_1internal_1_1assignment__from__xpr__plus__product.html" title="Eigen::internal::assignment\l_from_xpr_plus_product\&lt;\l DstXprType, OtherXpr, Product\l\&lt; Lhs, Rhs, DefaultProduct \&gt;,\l Scalar, internal::add_assign\l_op\&lt; Scalar \&gt;, internal::add_assign\l_op\&lt; Scalar \&gt; \&gt;" alt="" coords="6,5,234,120"/>
+<area shape="rect" id="node2" href="$struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_cwise_binary_op_3_01internal_1_1302d5704c152fdcdb64fecc0a2028891.html" title="Eigen::internal::Assignment\l\&lt; DstXprType, CwiseBinaryOp\l\&lt; internal::scalar_sum_op\&lt;\l Scalar \&gt;, const OtherXpr, const\l Product\&lt; Lhs, Rhs, DefaultProduct\l \&gt; \&gt;, internal::add_assign_op\&lt; Scalar\l \&gt;, Dense2Dense \&gt;" alt="" coords="283,5,523,120"/>
+</map>

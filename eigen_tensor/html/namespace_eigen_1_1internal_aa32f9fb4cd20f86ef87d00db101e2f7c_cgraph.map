@@ -1,0 +1,6 @@
+<map id="Eigen::internal::manage_caching_sizes" name="Eigen::internal::manage_caching_sizes">
+<area shape="rect" id="node2" href="$namespace_eigen.html#a2669f89ff38296a38e6d973552eb4e33" title="Eigen::l1CacheSize" alt="" coords="237,5,374,32"/>
+<area shape="rect" id="node3" href="$namespace_eigen.html#a2cfc0330ba567d63a496be1cac8427ae" title="Eigen::l2CacheSize" alt="" coords="237,56,374,83"/>
+<area shape="rect" id="node4" href="$namespace_eigen_1_1internal.html#a3a3f70166790e15844d6b9804f84f952" title="Eigen::internal::queryCache\lSizes" alt="" coords="214,107,397,149"/>
+<area shape="rect" id="node5" href="$namespace_eigen_1_1internal.html#ac2dabbb388a11b5e16876fccd70920f9" title="Eigen::internal::manage\l_caching_sizes_helper" alt="" coords="226,173,385,214"/>
+</map>
