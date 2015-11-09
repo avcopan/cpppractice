@@ -1,8 +1,0 @@
-<map id="Eigen::internal::scalar_isinf_op::operator()" name="Eigen::internal::scalar_isinf_op::operator()">
-<area shape="rect" id="node2" href="$namespace_eigen_1_1numext.html#a1f2c9142244f2788e40a4e14ece0e03b" title="Eigen::numext::isinf" alt="" coords="203,31,341,57"/>
-<area shape="rect" id="node3" href="$namespace_eigen_1_1numext.html#ad157039f65ea543e0cafce5c359b75f2" title="Eigen::numext::isinf" alt="" coords="389,31,528,57"/>
-<area shape="rect" id="node4" href="$_common_cwise_unary_ops_8h.html#a33eb4002957c08a7474a61ab8ab7e33c" title="real" alt="" coords="969,5,1012,32"/>
-<area shape="rect" id="node5" href="$_common_cwise_unary_ops_8h.html#ae05cbe0d49263ab62cb8aed7e00cad48" title="imag" alt="" coords="965,56,1016,83"/>
-<area shape="rect" id="node6" href="$namespace_eigen_1_1numext.html#a2240f0b346d83eca8337723c875c6032" title="Eigen::numext::isnan" alt="" coords="577,31,722,57"/>
-<area shape="rect" id="node7" href="$namespace_eigen_1_1numext.html#ac817c005a92ab73eff7a9e05dab16aae" title="Eigen::numext::isnan" alt="" coords="771,31,917,57"/>
-</map>

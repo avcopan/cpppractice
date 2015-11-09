@@ -1,5 +1,0 @@
-<map id="Eigen::internal::pconj" name="Eigen::internal::pconj">
-<area shape="rect" id="node2" href="$struct_eigen_1_1internal_1_1scalar__conjugate__op.html#ae03e0bcf75c34be57526342f0ea3cef1" title="Eigen::internal::scalar\l_conjugate_op::packetOp" alt="" coords="209,5,380,46"/>
-<area shape="rect" id="node3" href="$class_eigen_1_1internal_1_1gebp__traits_3_01std_1_1complex_3_01_real_scalar_01_4_00_01std_1_1com3fbe501975c876a010def81ad2701521.html#a473d4c28c179a02bb6aa755b221d9105" title="Eigen::internal::gebp\l_traits\&lt; std::complex\l\&lt; RealScalar \&gt;, std::complex\l\&lt; RealScalar \&gt;, _ConjLhs,\l _ConjRhs \&gt;::acc" alt="" coords="198,71,391,156"/>
-<area shape="rect" id="node4" href="$struct_eigen_1_1internal_1_1conj__if_3_01true_01_4.html#aa06571b4dd461c4799bfcb9746fe0d94" title="Eigen::internal::conj\l_if\&lt; true \&gt;::pconj" alt="" coords="226,181,363,222"/>
-</map>

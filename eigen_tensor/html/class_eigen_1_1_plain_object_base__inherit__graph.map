@@ -1,6 +1,0 @@
-<map id="Eigen::PlainObjectBase&lt; Derived &gt;" name="Eigen::PlainObjectBase&lt; Derived &gt;">
-<area shape="rect" id="node3" href="$class_eigen_1_1_plain_object_base.html" title="Eigen::PlainObjectBase\l\&lt; Array\&lt; _Scalar, _Rows,\l _Cols, _Options, _MaxRows,\l _MaxCols \&gt; \&gt;" alt="" coords="587,5,786,75"/>
-<area shape="rect" id="node5" href="$class_eigen_1_1_plain_object_base.html" title="Eigen::PlainObjectBase\l\&lt; Matrix\&lt; _Scalar, _Rows,\l _Cols, _Options, _MaxRows,\l _MaxCols \&gt; \&gt;" alt="" coords="587,99,786,170"/>
-<area shape="rect" id="node4" href="$class_eigen_1_1_array.html" title="General&#45;purpose arrays with easy API for coefficient&#45;wise operations. " alt="" coords="837,12,1011,68"/>
-<area shape="rect" id="node6" href="$class_eigen_1_1_matrix.html" title="The matrix class, also used for vectors and row&#45;vectors. " alt="" coords="837,107,1011,163"/>
-</map>

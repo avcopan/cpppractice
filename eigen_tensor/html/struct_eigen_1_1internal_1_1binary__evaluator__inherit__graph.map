@@ -1,4 +1,0 @@
-<map id="Eigen::internal::binary_evaluator&lt; T, LhsKind, RhsKind, LhsScalar, RhsScalar &gt;" name="Eigen::internal::binary_evaluator&lt; T, LhsKind, RhsKind, LhsScalar, RhsScalar &gt;">
-<area shape="rect" id="node2" href="$struct_eigen_1_1internal_1_1binary__evaluator.html" title="Eigen::internal::binary\l_evaluator\&lt; CwiseBinaryOp\l\&lt; BinaryOp, Lhs, Rhs \&gt; \&gt;" alt="" coords="23,139,208,195"/>
-<area shape="rect" id="node3" href="$struct_eigen_1_1internal_1_1evaluator_3_01_cwise_binary_op_3_01_binary_op_00_01_lhs_00_01_rhs_01_4_01_4.html" title="Eigen::internal::evaluator\l\&lt; CwiseBinaryOp\&lt; BinaryOp,\l Lhs, Rhs \&gt; \&gt;" alt="" coords="19,245,213,301"/>
-</map>

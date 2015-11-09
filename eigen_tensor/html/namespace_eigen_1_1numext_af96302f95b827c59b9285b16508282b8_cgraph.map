@@ -1,7 +1,0 @@
-<map id="Eigen::numext::EIGEN_MATHFUNC_RETVAL" name="Eigen::numext::EIGEN_MATHFUNC_RETVAL">
-<area shape="rect" id="node2" href="$namespace_eigen_1_1numext.html#ae6dcafa9f0a6ab2865e3f46ce4a1a130" title="Eigen::numext::real_ref" alt="" coords="219,12,376,39"/>
-<area shape="rect" id="node4" href="$struct_eigen_1_1internal_1_1round__impl.html#a76597be9d8fd901f20ff11c14824844c" title="Eigen::internal::round\l_impl::run" alt="" coords="225,63,370,105"/>
-<area shape="rect" id="node3" href="$struct_eigen_1_1internal_1_1real__ref__impl.html#ae9ce89dfa0fe1c49923f839390e5c676" title="Eigen::internal::real\l_ref_impl::run" alt="" coords="425,5,559,46"/>
-<area shape="rect" id="node5" href="$_array_cwise_unary_ops_8h.html#a2f66786aab3a6797e7b5257baf50c3a3" title="floor" alt="" coords="469,71,515,97"/>
-<area shape="rect" id="node6" href="$_array_cwise_unary_ops_8h.html#a4fc6f9c8278bee766ca7adfe8fcf8805" title="ceil" alt="" coords="471,121,513,148"/>
-</map>

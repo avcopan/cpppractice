@@ -1,8 +1,0 @@
-<map id="Eigen::internal::Assignment&lt; DstXprType, SrcXprType, Functor, Dense2Dense, Scalar &gt;::run" name="Eigen::internal::Assignment&lt; DstXprType, SrcXprType, Functor, Dense2Dense, Scalar &gt;::run">
-<area shape="rect" id="node2" href="$namespace_eigen_1_1internal.html#a2088791fb8428a2cfad6bd71298795a2" title="Eigen::internal::check\l_for_aliasing" alt="" coords="310,5,458,46"/>
-<area shape="rect" id="node7" href="$namespace_eigen_1_1internal.html#a29da25540c0f28e2a76a4a9a79faffe9" title="Eigen::internal::call\l_dense_assignment_loop" alt="" coords="299,70,469,111"/>
-<area shape="rect" id="node3" href="$struct_eigen_1_1internal_1_1check_transpose_aliasing__impl.html#a01cee326e5f97de5675845081f35a9ab" title="Eigen::internal::checkTranspose\lAliasing_impl::run" alt="" coords="518,5,727,46"/>
-<area shape="rect" id="node4" href="$namespace_eigen_1_1internal.html#a61201d7da2eeda8e5469dc7b46d93c4d" title="Eigen::internal::extract_data" alt="" coords="777,12,962,39"/>
-<area shape="rect" id="node5" href="$struct_eigen_1_1internal_1_1extract__data__selector.html#a5e4c8df8b5b38f6787b61035b5118d77" title="Eigen::internal::extract\l_data_selector::run" alt="" coords="1011,5,1165,46"/>
-<area shape="rect" id="node6" href="$struct_eigen_1_1internal_1_1blas__traits.html#a05d6cd2ebeac5e92aee45db28b416023" title="Eigen::internal::blas\l_traits::extract" alt="" coords="1214,5,1351,46"/>
-</map>

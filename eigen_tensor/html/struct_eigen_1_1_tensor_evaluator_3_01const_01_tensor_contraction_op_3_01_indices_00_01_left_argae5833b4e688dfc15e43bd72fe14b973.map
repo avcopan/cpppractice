@@ -1,4 +1,0 @@
-<map id="Eigen::TensorEvaluator&lt; const TensorContractionOp&lt; Indices, LeftArgType, RightArgType &gt;, Device &gt;" name="Eigen::TensorEvaluator&lt; const TensorContractionOp&lt; Indices, LeftArgType, RightArgType &gt;, Device &gt;">
-<area shape="rect" id="node2" href="$struct_eigen_1_1_tensor_contraction_evaluator_base.html" title="Eigen::TensorContraction\lEvaluatorBase\&lt; TensorEvaluator\l\&lt; const TensorContractionOp\l\&lt; Indices, LeftArgType, RightArgType\l \&gt;, Device \&gt; \&gt;" alt="" coords="400,21,643,107"/>
-<area shape="rect" id="node3" href="$struct_eigen_1_1_tensor_contraction_evaluator_base.html" title="Eigen::TensorContraction\lEvaluatorBase\&lt; Derived \&gt;" alt="" coords="5,43,181,85"/>
-</map>

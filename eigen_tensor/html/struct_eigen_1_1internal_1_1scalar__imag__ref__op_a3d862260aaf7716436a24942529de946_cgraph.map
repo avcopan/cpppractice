@@ -1,4 +1,0 @@
-<map id="Eigen::internal::scalar_imag_ref_op::operator()" name="Eigen::internal::scalar_imag_ref_op::operator()">
-<area shape="rect" id="node2" href="$namespace_eigen_1_1numext.html#a6360617e1f08a52fa6b285b24afb5e0d" title="Eigen::numext::imag_ref" alt="" coords="217,19,381,45"/>
-<area shape="rect" id="node3" href="$struct_eigen_1_1internal_1_1imag__ref__default__impl.html#af68d1b1efe6046f7ff9a6465cacd1451" title="Eigen::internal::imag\l_ref_default_impl\&lt; Scalar,\l NumTraits\&lt; Scalar \&gt;::IsComplex \&gt;::run" alt="" coords="430,4,687,60"/>
-</map>

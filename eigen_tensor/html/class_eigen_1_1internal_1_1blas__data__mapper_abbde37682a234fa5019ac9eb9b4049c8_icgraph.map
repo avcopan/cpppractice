@@ -1,7 +1,0 @@
-<map id="Eigen::internal::blas_data_mapper::operator()" name="Eigen::internal::blas_data_mapper::operator()">
-<area shape="rect" id="node2" href="$class_eigen_1_1internal_1_1blas__data__mapper.html#a21eeff24526bc684ce0cfbb94f925822" title="Eigen::internal::blas\l_data_mapper\&lt; const Scalar,\l Index, StorageOrder \&gt;::getSubMapper" alt="" coords="222,5,469,61"/>
-<area shape="rect" id="node3" href="$class_eigen_1_1internal_1_1blas__data__mapper.html#a307d59171cadadd086f0c3f458bfca7a" title="Eigen::internal::blas\l_data_mapper\&lt; const Scalar,\l Index, StorageOrder \&gt;::loadPacket" alt="" coords="231,85,459,141"/>
-<area shape="rect" id="node4" href="$class_eigen_1_1internal_1_1blas__data__mapper.html#a5540c0f0c697731405a84aad4050bd06" title="Eigen::internal::blas\l_data_mapper\&lt; const Scalar,\l Index, StorageOrder \&gt;::loadHalf\lPacket" alt="" coords="240,166,451,237"/>
-<area shape="rect" id="node5" href="$class_eigen_1_1internal_1_1blas__data__mapper.html#a949cc47cdc312894391f940c01a91ea4" title="Eigen::internal::blas\l_data_mapper\&lt; const Scalar,\l Index, StorageOrder \&gt;::scatterPacket" alt="" coords="223,261,467,317"/>
-<area shape="rect" id="node6" href="$class_eigen_1_1internal_1_1blas__data__mapper.html#a79c924caea42909a37e60f78df3b68ba" title="Eigen::internal::blas\l_data_mapper\&lt; const Scalar,\l Index, StorageOrder \&gt;::gatherPacket" alt="" coords="225,341,465,397"/>
-</map>

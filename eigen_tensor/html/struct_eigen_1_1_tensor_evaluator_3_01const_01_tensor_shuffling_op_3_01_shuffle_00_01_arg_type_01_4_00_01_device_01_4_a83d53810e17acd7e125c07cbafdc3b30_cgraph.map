@@ -1,4 +1,0 @@
-<map id="Eigen::TensorEvaluator&lt; const TensorShufflingOp&lt; Shuffle, ArgType &gt;, Device &gt;::packet" name="Eigen::TensorEvaluator&lt; const TensorShufflingOp&lt; Shuffle, ArgType &gt;, Device &gt;::packet">
-<area shape="rect" id="node2" href="$struct_eigen_1_1_tensor_evaluator.html#a04db34afedf021fa22f5de5f16beae28" title="Eigen::TensorEvaluator\l::dimensions" alt="" coords="249,5,407,46"/>
-<area shape="rect" id="node3" href="$struct_eigen_1_1_tensor_evaluator.html#a2978c3361b9378f17477ed107775a8cd" title="Eigen::TensorEvaluator\l::coeff" alt="" coords="249,70,407,111"/>
-</map>

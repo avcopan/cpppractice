@@ -1,4 +1,0 @@
-<map id="Eigen::internal::call_dense_assignment_loop" name="Eigen::internal::call_dense_assignment_loop">
-<area shape="rect" id="node2" href="$namespace_eigen_1_1internal.html#a934a82ab41363995538cede341ce0551" title="Eigen::internal::call\l_dense_assignment_loop" alt="" coords="262,5,431,46"/>
-<area shape="rect" id="node3" href="$struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_src_xpr_type_00_01_functor_00_01_dense2_dense_00_01_scalar_01_4.html#a5e0db2d0fd0a91b80bf4f77be172d1aa" title="Eigen::internal::Assignment\l\&lt; DstXprType, SrcXprType,\l Functor, Dense2Dense, Scalar \&gt;::run" alt="" coords="225,69,469,125"/>
-</map>

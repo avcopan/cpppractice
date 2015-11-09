@@ -1,4 +1,0 @@
-<map id="Eigen::internal::dense_assignment_loop&lt; Kernel, LinearVectorizedTraversal, CompleteUnrolling &gt;::run" name="Eigen::internal::dense_assignment_loop&lt; Kernel, LinearVectorizedTraversal, CompleteUnrolling &gt;::run">
-<area shape="rect" id="node2" href="$struct_eigen_1_1internal_1_1copy__using__evaluator__innervec___complete_unrolling.html#a5d26f02f41e78b2e18e0294a22393ebb" title="Eigen::internal::copy\l_using_evaluator_innervec\l_CompleteUnrolling::run" alt="" coords="259,5,435,61"/>
-<area shape="rect" id="node3" href="$struct_eigen_1_1internal_1_1copy__using__evaluator___default_traversal___complete_unrolling.html#a9d9964d1daebdb781f198dc25cde8d1f" title="Eigen::internal::copy\l_using_evaluator_DefaultTraversal\l_CompleteUnrolling::run" alt="" coords="235,85,458,141"/>
-</map>

@@ -1,4 +1,0 @@
-<map id="Eigen::internal::gemm_pack_rhs&lt; Scalar, Index, DataMapper, nr, ColMajor, Conjugate, PanelMode &gt;::operator()" name="Eigen::internal::gemm_pack_rhs&lt; Scalar, Index, DataMapper, nr, ColMajor, Conjugate, PanelMode &gt;::operator()">
-<area shape="rect" id="node2" href="$namespace_eigen_1_1internal.html#abafa3258d46f4f5b3311380649412131" title="Eigen::internal::ptranspose" alt="" coords="289,5,466,32"/>
-<area shape="rect" id="node3" href="$namespace_eigen_1_1internal.html#abcb1c5d429335ed8c976a6b238287a2e" title="Eigen::internal::pstoreu" alt="" coords="299,56,455,83"/>
-</map>

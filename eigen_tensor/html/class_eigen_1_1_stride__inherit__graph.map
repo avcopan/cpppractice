@@ -1,6 +1,0 @@
-<map id="Eigen::Stride&lt; _OuterStrideAtCompileTime, _InnerStrideAtCompileTime &gt;" name="Eigen::Stride&lt; _OuterStrideAtCompileTime, _InnerStrideAtCompileTime &gt;">
-<area shape="rect" id="node2" href="$class_eigen_1_1_stride.html" title="Eigen::Stride\&lt; Value, 0 \&gt;" alt="" coords="5,125,173,152"/>
-<area shape="rect" id="node4" href="$class_eigen_1_1_stride.html" title="Eigen::Stride\&lt; 0, Value \&gt;" alt="" coords="198,125,367,152"/>
-<area shape="rect" id="node3" href="$class_eigen_1_1_outer_stride.html" title="Convenience specialization of Stride to specify only an outer stride See class Map for some examples..." alt="" coords="25,203,153,245"/>
-<area shape="rect" id="node5" href="$class_eigen_1_1_inner_stride.html" title="Convenience specialization of Stride to specify only an inner stride See class Map for some examples..." alt="" coords="219,203,345,245"/>
-</map>

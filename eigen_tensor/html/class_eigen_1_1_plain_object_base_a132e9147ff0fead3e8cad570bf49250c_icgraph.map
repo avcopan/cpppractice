@@ -1,6 +1,0 @@
-<map id="Eigen::PlainObjectBase::cols" name="Eigen::PlainObjectBase::cols">
-<area shape="rect" id="node2" href="$class_eigen_1_1_dense_base.html#aaab63cc56d30cc7c23a80304ab94ba2e" title="Eigen::DenseBase::swap" alt="" coords="244,5,415,32"/>
-<area shape="rect" id="node3" href="$class_eigen_1_1_plain_object_base.html#a99d9054ee2d5a40c6e00ded0265e9cea" title="Eigen::PlainObjectBase\l\&lt; Matrix\&lt; _Scalar, _Rows,\l _Cols, _Options, _MaxRows,\l _MaxCols \&gt; \&gt;::resize" alt="" coords="230,57,429,127"/>
-<area shape="rect" id="node4" href="$class_eigen_1_1_plain_object_base.html#a528879aef40f9cbc4ab4925e4a6bceb9" title="Eigen::PlainObjectBase\l\&lt; Matrix\&lt; _Scalar, _Rows,\l _Cols, _Options, _MaxRows,\l _MaxCols \&gt; \&gt;::conservativeResize" alt="" coords="213,151,445,222"/>
-<area shape="rect" id="node5" href="$class_eigen_1_1_plain_object_base.html#ac61a071ebfe1068ff76095b617a35e93" title="Eigen::PlainObjectBase\l\&lt; Matrix\&lt; _Scalar, _Rows,\l _Cols, _Options, _MaxRows,\l _MaxCols \&gt; \&gt;::_resize_to_match" alt="" coords="219,246,439,317"/>
-</map>

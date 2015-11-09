@@ -1,6 +1,0 @@
-<map id="Eigen::DenseBase&lt; Derived &gt;" name="Eigen::DenseBase&lt; Derived &gt;">
-<area shape="rect" id="node2" href="$struct_eigen_1_1internal_1_1special__scalar__op__base.html" title="Eigen::internal::special\l_scalar_op_base\&lt; Derived,\l internal::traits\&lt; Derived\l \&gt;::Scalar, NumTraits\&lt; internal\l::traits\&lt; Derived \&gt;::Scalar \&gt;\l::Real, DenseCoeffsBase\&lt; Derived \&gt; \&gt;" alt="" coords="779,30,1032,130"/>
-<area shape="rect" id="node3" href="$class_eigen_1_1_dense_coeffs_base.html" title="Eigen::DenseCoeffsBase\l\&lt; Derived \&gt;" alt="" coords="319,5,489,46"/>
-<area shape="rect" id="node4" href="$class_eigen_1_1_dense_coeffs_base.html" title="Eigen::DenseCoeffsBase\l\&lt; Derived, Level \&gt;" alt="" coords="5,5,176,46"/>
-<area shape="rect" id="node5" href="$struct_eigen_1_1internal_1_1special__scalar__op__base.html" title="Eigen::internal::special\l_scalar_op_base\&lt; Derived,\l Scalar, OtherScalar, BaseType,\l EnableIt \&gt;" alt="" coords="299,98,509,169"/>
-</map>

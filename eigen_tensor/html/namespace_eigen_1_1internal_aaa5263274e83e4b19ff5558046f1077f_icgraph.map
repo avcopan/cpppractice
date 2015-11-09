@@ -1,6 +1,0 @@
-<map id="Eigen::internal::smart_copy" name="Eigen::internal::smart_copy">
-<area shape="rect" id="node2" href="$class_eigen_1_1_dense_storage_3_01_t_00_01_dynamic_00_01_dynamic_00_01_dynamic_00_01___options_01_4.html#a5a73c9106cf39870aa08350c6acbce67" title="Eigen::DenseStorage\l\&lt; T, Dynamic, Dynamic,\l Dynamic, _Options \&gt;::\lDenseStorage" alt="" coords="263,5,430,75"/>
-<area shape="rect" id="node3" href="$class_eigen_1_1_dense_storage_3_01_t_00_01_dynamic_00_01___rows_00_01_dynamic_00_01___options_01_4.html#ad24d636d0fbfd39e41e1f66a571e93c6" title="Eigen::DenseStorage\l\&lt; T, Dynamic, _Rows,\l Dynamic, _Options \&gt;\l::DenseStorage" alt="" coords="269,99,424,170"/>
-<area shape="rect" id="node4" href="$class_eigen_1_1_dense_storage_3_01_t_00_01_dynamic_00_01_dynamic_00_01___cols_00_01___options_01_4.html#a6dc1be1311259c4c03eeca000544b096" title="Eigen::DenseStorage\l\&lt; T, Dynamic, Dynamic,\l _Cols, _Options \&gt;::DenseStorage" alt="" coords="235,195,458,251"/>
-<area shape="rect" id="node5" href="$class_eigen_1_1_tensor_storage_3_01_t_00_01_d_sizes_3_01_index_type_00_01_num_indices___01_4_00_01_options___01_4.html#aea89ee94b51f8e69eebab82d4403ad38" title="Eigen::TensorStorage\l\&lt; T, DSizes\&lt; IndexType,\l NumIndices_ \&gt;, Options\l_ \&gt;::TensorStorage" alt="" coords="261,275,432,346"/>
-</map>

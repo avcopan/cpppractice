@@ -1,6 +1,0 @@
-<map id="Eigen::TensorEvaluator::coeffRef" name="Eigen::TensorEvaluator::coeffRef">
-<area shape="rect" id="node2" href="$struct_eigen_1_1internal_1_1_initializer_3_01_derived_00_011_01_4.html#a6bb235c64e19da7a9440a41eca0bdf21" title="Eigen::internal::Initializer\l\&lt; Derived, 1 \&gt;::run" alt="" coords="244,5,409,46"/>
-<area shape="rect" id="node3" href="$struct_eigen_1_1internal_1_1_initializer_3_01_derived_00_010_01_4.html#a0651afbd0e6ab1be0605bcdd336dbe74" title="Eigen::internal::Initializer\l\&lt; Derived, 0 \&gt;::run" alt="" coords="244,70,409,111"/>
-<area shape="rect" id="node4" href="$struct_eigen_1_1_tensor_evaluator_3_01_tensor_slicing_op_3_01_start_indices_00_01_sizes_00_01_arg_type_01_4_00_01_device_01_4.html#af4264a544b1b9452d9495c302cd8b4b7" title="Eigen::TensorEvaluator\l\&lt; TensorSlicingOp\&lt; StartIndices,\l Sizes, ArgType \&gt;, Device \&gt;\l::writePacket" alt="" coords="219,135,435,206"/>
-<area shape="rect" id="node5" href="$struct_eigen_1_1_tensor_evaluator_3_01_tensor_shuffling_op_3_01_shuffle_00_01_arg_type_01_4_00_01_device_01_4.html#ae61abeb33c6bd3eb3f0ac30ab84d9cbc" title="Eigen::TensorEvaluator\l\&lt; TensorShufflingOp\&lt; Shuffle,\l ArgType \&gt;, Device \&gt;::writePacket" alt="" coords="214,231,439,287"/>
-</map>

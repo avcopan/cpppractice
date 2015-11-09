@@ -1,6 +1,0 @@
-<map id="Eigen::internal::evaluator&lt; PartialReduxExpr&lt; ArgType, MemberOp, Direction &gt; &gt;" name="Eigen::internal::evaluator&lt; PartialReduxExpr&lt; ArgType, MemberOp, Direction &gt; &gt;">
-<area shape="rect" id="node2" href="$struct_eigen_1_1internal_1_1evaluator__base.html" title="Eigen::internal::evaluator\l_base\&lt; PartialReduxExpr\l\&lt; ArgType, MemberOp, Direction \&gt; \&gt;" alt="" coords="606,5,845,61"/>
-<area shape="rect" id="node3" href="$class_eigen_1_1internal_1_1noncopyable.html" title="Eigen::internal::noncopyable" alt="" coords="5,12,192,39"/>
-<area shape="rect" id="node4" href="$struct_eigen_1_1internal_1_1evaluator__base.html" title="Eigen::internal::evaluator\l_base\&lt; ExpressionType \&gt;" alt="" coords="243,42,418,83"/>
-<area shape="rect" id="node5" href="$struct_eigen_1_1internal_1_1conditional.html" title="Eigen::internal::conditional\l\&lt; Condition, Then, Else \&gt;" alt="" coords="638,85,813,126"/>
-</map>

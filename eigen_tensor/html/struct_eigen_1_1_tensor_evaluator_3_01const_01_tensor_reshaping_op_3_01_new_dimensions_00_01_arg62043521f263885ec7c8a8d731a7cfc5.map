@@ -1,7 +1,0 @@
-<map id="Eigen::TensorEvaluator&lt; const TensorReshapingOp&lt; NewDimensions, ArgType &gt;, Device &gt;" name="Eigen::TensorEvaluator&lt; const TensorReshapingOp&lt; NewDimensions, ArgType &gt;, Device &gt;">
-<area shape="rect" id="node2" href="$struct_eigen_1_1_tensor_evaluator.html" title="Eigen::TensorEvaluator\l\&lt; ArgType, Device \&gt;" alt="" coords="137,339,295,381"/>
-<area shape="rect" id="node3" href="$struct_eigen_1_1_sizes.html" title="Eigen::Sizes\&lt; Indices \&gt;" alt="" coords="5,240,168,267"/>
-<area shape="rect" id="node4" href="$struct_eigen_1_1internal_1_1numeric__list.html" title="Eigen::internal::numeric\l_list\&lt; std::ptrdiff_t,\l Indices...\&gt;" alt="" coords="7,112,165,168"/>
-<area shape="rect" id="node5" href="$struct_eigen_1_1internal_1_1numeric__list.html" title="Eigen::internal::numeric\l_list\&lt; T, nn \&gt;" alt="" coords="7,6,165,47"/>
-<area shape="rect" id="node7" href="$struct_eigen_1_1_tensor_evaluator.html" title="The tensor evaluator classes. " alt="" coords="302,233,460,274"/>
-</map>

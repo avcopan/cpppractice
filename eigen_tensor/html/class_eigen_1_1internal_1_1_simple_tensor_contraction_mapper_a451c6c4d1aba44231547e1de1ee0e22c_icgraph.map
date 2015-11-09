@@ -1,4 +1,0 @@
-<map id="Eigen::internal::SimpleTensorContractionMapper::operator()" name="Eigen::internal::SimpleTensorContractionMapper::operator()">
-<area shape="rect" id="node2" href="$class_eigen_1_1internal_1_1_base_tensor_contraction_mapper.html#a3796f28ebdfe3325323f6c20cda99b28" title="Eigen::internal::BaseTensor\lContractionMapper::loadHalfPacket" alt="" coords="248,29,477,70"/>
-<area shape="rect" id="node3" href="$class_eigen_1_1internal_1_1_tensor_contraction_sub_mapper.html#a42e4311d6d1fa4f43268a7fb0088e6a9" title="Eigen::internal::TensorContraction\lSubMapper::loadHalfPacket" alt="" coords="526,29,746,70"/>
-</map>

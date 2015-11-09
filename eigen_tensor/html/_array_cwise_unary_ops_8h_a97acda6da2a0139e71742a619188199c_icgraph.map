@@ -1,5 +1,0 @@
-<map id="atan" name="atan">
-<area shape="rect" id="node2" href="$struct_eigen_1_1internal_1_1scalar__atan__op.html#aa3258d4dc74528946eb8e9d297b9ee50" title="Eigen::internal::scalar\l_atan_op::operator()" alt="" coords="102,5,250,46"/>
-<area shape="rect" id="node3" href="$namespace_eigen_1_1internal.html#aeb4feddd9334c4ddff94450e2f19e96c" title="Eigen::internal::patan" alt="" coords="103,71,249,97"/>
-<area shape="rect" id="node4" href="$struct_eigen_1_1internal_1_1scalar__atan__op.html#aac7dc799fcb4cedf195322d6bcc512b6" title="Eigen::internal::scalar\l_atan_op::packetOp" alt="" coords="299,63,447,105"/>
-</map>

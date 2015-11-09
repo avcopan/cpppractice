@@ -1,7 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_eigen_1_1_dense_coeffs_base.html" title="Eigen::DenseCoeffsBase\l\&lt; Derived \&gt;" alt="" coords="5,34,176,75"/>
-<area shape="rect" id="node2" href="$struct_eigen_1_1internal_1_1special__scalar__op__base.html" title="Eigen::internal::special\l_scalar_op_base\&lt; Derived,\l internal::traits\&lt; Derived\l \&gt;::Scalar, NumTraits\&lt; internal\l::traits\&lt; Derived \&gt;::Scalar \&gt;\l::Real, DenseCoeffsBase\&lt; Derived \&gt; \&gt;" alt="" coords="224,5,477,105"/>
-<area shape="rect" id="node3" href="$class_eigen_1_1_dense_base.html" title="Base class for all dense matrices, vectors, and arrays. " alt="" coords="525,41,725,68"/>
-<area shape="rect" id="node4" href="$class_eigen_1_1_array_base.html" title="Base class for all 1D and 2D array, and related expressions. " alt="" coords="774,12,967,39"/>
-<area shape="rect" id="node5" href="$class_eigen_1_1_matrix_base.html" title="Base class for all dense matrices, vectors, and expressions. " alt="" coords="802,63,939,105"/>
-</map>

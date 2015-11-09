@@ -1,4 +1,0 @@
-<map id="Eigen::internal::conj_helper&lt; LhsScalar, RhsScalar, ConjLhs, ConjRhs &gt;" name="Eigen::internal::conj_helper&lt; LhsScalar, RhsScalar, ConjLhs, ConjRhs &gt;">
-<area shape="rect" id="node2" href="$struct_eigen_1_1internal_1_1conj__helper.html" title="Eigen::internal::conj\l_helper\&lt; Eigen::internal\l::true_type, Eigen::internal\l::true_type, false, ConjRhs \&gt;" alt="" coords="433,5,623,75"/>
-<area shape="rect" id="node3" href="$struct_eigen_1_1internal_1_1conj__helper.html" title="Eigen::internal::conj\l_helper\&lt; Eigen::internal\l::true_type, Eigen::internal\l::true_type, ConjLhs, false \&gt;" alt="" coords="434,99,622,170"/>
-</map>

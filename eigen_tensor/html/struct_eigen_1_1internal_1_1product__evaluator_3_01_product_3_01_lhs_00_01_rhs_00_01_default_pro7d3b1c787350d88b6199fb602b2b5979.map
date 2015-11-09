@@ -1,4 +1,0 @@
-<map id="Eigen::internal::product_evaluator&lt; Product&lt; Lhs, Rhs, DefaultProduct &gt;, LazyCoeffBasedProductMode, DenseShape, DenseShape &gt;" name="Eigen::internal::product_evaluator&lt; Product&lt; Lhs, Rhs, DefaultProduct &gt;, LazyCoeffBasedProductMode, DenseShape, DenseShape &gt;">
-<area shape="rect" id="node2" href="$struct_eigen_1_1internal_1_1product__evaluator.html" title="Eigen::internal::product\l_evaluator\&lt; Product\&lt; Lhs,\l Rhs, LazyProduct \&gt;, CoeffBasedProduct\lMode, DenseShape, DenseShape \&gt;" alt="" coords="446,29,711,99"/>
-<area shape="rect" id="node3" href="$struct_eigen_1_1internal_1_1product__evaluator.html" title="Eigen::internal::product\l_evaluator\&lt; T, ProductTag,\l LhsShape, RhsShape, LhsScalar,\l RhsScalar \&gt;" alt="" coords="6,29,229,99"/>
-</map>

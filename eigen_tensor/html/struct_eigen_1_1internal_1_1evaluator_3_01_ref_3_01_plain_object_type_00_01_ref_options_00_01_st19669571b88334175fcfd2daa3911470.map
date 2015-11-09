@@ -1,8 +1,0 @@
-<map id="Eigen::internal::evaluator&lt; Ref&lt; PlainObjectType, RefOptions, StrideType &gt; &gt;" name="Eigen::internal::evaluator&lt; Ref&lt; PlainObjectType, RefOptions, StrideType &gt; &gt;">
-<area shape="rect" id="node2" href="$struct_eigen_1_1internal_1_1mapbase__evaluator.html" title="Eigen::internal::mapbase\l_evaluator\&lt; Ref\&lt; PlainObjectType,\l RefOptions, StrideType \&gt;, PlainObjectType \&gt;" alt="" coords="1299,39,1589,95"/>
-<area shape="rect" id="node3" href="$struct_eigen_1_1internal_1_1evaluator__base.html" title="Eigen::internal::evaluator\l_base\&lt; Ref\&lt; PlainObjectType,\l RefOptions, StrideType \&gt; \&gt;" alt="" coords="632,4,835,60"/>
-<area shape="rect" id="node4" href="$class_eigen_1_1internal_1_1noncopyable.html" title="Eigen::internal::noncopyable" alt="" coords="5,52,192,79"/>
-<area shape="rect" id="node5" href="$struct_eigen_1_1internal_1_1evaluator__base.html" title="Eigen::internal::evaluator\l_base\&lt; ExpressionType \&gt;" alt="" coords="243,45,418,86"/>
-<area shape="rect" id="node7" href="$struct_eigen_1_1internal_1_1evaluator__base.html" title="Eigen::internal::evaluator\l_base\&lt; Derived \&gt;" alt="" coords="650,83,817,125"/>
-<area shape="rect" id="node6" href="$struct_eigen_1_1internal_1_1mapbase__evaluator.html" title="Eigen::internal::mapbase\l_evaluator\&lt; Derived, PlainObject\lType \&gt;" alt="" coords="886,72,1101,128"/>
-</map>
