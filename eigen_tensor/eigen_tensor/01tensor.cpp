@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Eigen/Tensor.h"
+#include <Eigen/CXX11/Tensor>
 
 int main() {
   Eigen::Tensor<int, 3> epsilon(3,3,3);

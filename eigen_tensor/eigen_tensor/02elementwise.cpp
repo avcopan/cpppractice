@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Eigen/Tensor.h"
+#include <Eigen/CXX11/Tensor>
 
 int main() {
   Eigen::Tensor<double, 4> A(2,2,2,2);

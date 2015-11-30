@@ -1,6 +1,6 @@
 #include <iostream>
 #include <array>
-#include "Eigen/Tensor.h"
+#include <Eigen/CXX11/Tensor>
 
 int main() {
   Eigen::Tensor<double, 4> g(7,2,2,7);

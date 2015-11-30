@@ -1,0 +1,12 @@
+# compile -- make sure you export $GITHUB=/path/to/dir/before/psi4/
+c++ -fPIC -I$GITHUB/psi4/obj/src/lib -I$GITHUB/psi4/src/lib -I$GITHUB/psi4/include -I$GITHUB/psi4/obj/include -I/usr/include/python2.7 -I. -c plugin_main.cc
+
+# link
+c++ -shared -o plugin_main.so plugin_main.o -L$GITHUB/psi4/obj/lib -lplugin
+
+# run -- input must call  psi4.plugin('./plugin_main.so')
+psi4 input.dat
+
+# clean up
+rm *.o *.so output.dat timer.dat
+

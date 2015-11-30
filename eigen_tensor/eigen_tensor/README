@@ -1,0 +1,7 @@
+# compiled with
+clang++-3.6 -std=c++11 -I$GITHUB/eigen -I$GITHUB/eigen/unsupported/ 01tensor.cpp      -o 01tensor.bin
+clang++-3.6 -std=c++11 -I$GITHUB/eigen -I$GITHUB/eigen/unsupported/ 02elementwise.cpp -o 02elementwise.bin
+clang++-3.6 -std=c++11 -I$GITHUB/eigen -I$GITHUB/eigen/unsupported/ 03contract.cpp    -o 03contract.bin
+clang++-3.6 -std=c++11 -I$GITHUB/eigen -I$GITHUB/eigen/unsupported/ 04contract.cpp    -o 04contract.bin
+clang++-3.6 -std=c++11 -I$GITHUB/eigen -I$GITHUB/eigen/unsupported/ 05broadcast.cpp   -o 05broadcast.bin
+clang++-3.6 -std=c++11 -I$GITHUB/eigen -I$GITHUB/eigen/unsupported/ 06transpose.cpp   -o 06transpose.bin
