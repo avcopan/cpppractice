@@ -44,37 +44,19 @@ int main() {
   for(std::vector<Hero>::iterator h = heroes.begin(); h != heroes.end(); ++h)
     h->print();
 
-  std::sort(heroes.begin(), heroes.end(),
-    [](const Hero& h1, const Hero& h2) -> bool {return h1.gold  < h2.gold ;});
+  // sometimes it may better to capture by reference rather than by value
+  unsigned int num_rich = 0;
+  unsigned int num_poor = 0;
+  unsigned int gold_thresh = 100u;
 
-  std::cout << "\nThe Heroes (sorted by wealth):" << std::endl;
-  for(std::vector<Hero>::iterator h = heroes.begin(); h != heroes.end(); ++h)
-    h->print();
+  std::for_each (std::begin(heroes), std::end(heroes),
+    [&num_rich, &num_poor, gold_thresh](const Hero& hero) {
+      const unsigned int& gold = hero.gold;
+      if      (gold >= gold_thresh) ++num_rich;
+      else if (gold <  gold_thresh) ++num_poor;
+    }
+  );
 
-  std::sort(heroes.begin(), heroes.end(),
-    [](const Hero& h1, const Hero& h2) -> bool {return h1.honor < h2.honor;});
-
-  std::cout << "\nThe Heroes (sorted by honor):" << std::endl;
-  for(std::vector<Hero>::iterator h = heroes.begin(); h != heroes.end(); ++h)
-    h->print();
-
-  std::vector<Hero> heroes_copy1 = heroes;
-
-  auto end = std::remove_if(std::begin(heroes_copy1), std::end(heroes_copy1),
-    [](const Hero& hero) -> bool { return hero.gold < 100u; });
-  heroes_copy1.erase(end, std::end(heroes_copy1));
-
-  std::cout << "\nRich Heroes:" << std::endl;
-  for(std::vector<Hero>::iterator h = heroes_copy1.begin(); h != heroes_copy1.end(); ++h)
-    h->print();
-
-  std::vector<Hero> heroes_copy2 = heroes;
-
-  end = std::remove_if(std::begin(heroes_copy2), std::end(heroes_copy2),
-    [](const Hero& hero) { return hero.honor > 50u; }); // lambda return type if effectively auto -- so bool is deduced in this case
-  heroes_copy2.erase(end, std::end(heroes_copy2));
-
-  std::cout << "\nHeroes with shit for honor:" << std::endl;
-  for(std::vector<Hero>::iterator h = heroes_copy2.begin(); h != heroes_copy2.end(); ++h)
-    h->print();
+  std::cout << "\nThere are " << num_rich << " rich heroes and " <<
+                                 num_poor << " poor heroes."     << std::endl;
 }

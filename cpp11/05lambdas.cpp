@@ -59,7 +59,6 @@ int main() {
 
   std::vector<Hero> heroes;
 
-  std::cout << "\nThe Heroes:" << std::endl;
   heroes.push_back(Hero("Achilles"   ,  1, 58));
   heroes.push_back(Hero("Bellerophon",513,327));
   heroes.push_back(Hero("Cadmus"     , 27,815));
@@ -76,9 +75,7 @@ int main() {
   heroes.push_back(Hero("Theseus"    ,  4,201));
   heroes.push_back(Hero("Triptolemos", 28, 90));
 
-  std::vector<Hero> heroes_copy1 = heroes;
-  std::vector<Hero> heroes_copy2 = heroes;
-
+  std::cout << "\nThe Heroes:" << std::endl;
   for(std::vector<Hero>::iterator h = heroes.begin(); h != heroes.end(); ++h)
     h->print();
 
@@ -94,12 +91,16 @@ int main() {
   for(std::vector<Hero>::iterator h = heroes.begin(); h != heroes.end(); ++h)
     h->print();
 
+  std::vector<Hero> heroes_copy1 = heroes;
+
   std::vector<Hero>::iterator end = std::remove_if(heroes_copy1.begin(), heroes_copy1.end(), HasLessGoldThan(100));
   heroes_copy1.erase(end, heroes_copy1.end()); // this will delete the remaining elements
 
   std::cout << "\nRich Heroes:" << std::endl;
   for(std::vector<Hero>::iterator h = heroes_copy1.begin(); h != heroes_copy1.end(); ++h)
     h->print();
+
+  std::vector<Hero> heroes_copy2 = heroes;
 
   end = std::remove_if(heroes_copy2.begin(), heroes_copy2.end(), HasMoreHonorThan(50));
   heroes_copy2.erase(end, heroes_copy2.end()); // this will delete the remaining elements

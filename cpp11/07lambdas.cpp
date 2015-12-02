@@ -44,24 +44,22 @@ int main() {
   for(std::vector<Hero>::iterator h = heroes.begin(); h != heroes.end(); ++h)
     h->print();
 
-  std::sort(heroes.begin(), heroes.end(),
-    [](const Hero& h1, const Hero& h2) -> bool {return h1.gold  < h2.gold ;});
-
-  std::cout << "\nThe Heroes (sorted by wealth):" << std::endl;
-  for(std::vector<Hero>::iterator h = heroes.begin(); h != heroes.end(); ++h)
-    h->print();
-
-  std::sort(heroes.begin(), heroes.end(),
-    [](const Hero& h1, const Hero& h2) -> bool {return h1.honor < h2.honor;});
-
-  std::cout << "\nThe Heroes (sorted by honor):" << std::endl;
-  for(std::vector<Hero>::iterator h = heroes.begin(); h != heroes.end(); ++h)
-    h->print();
-
   std::vector<Hero> heroes_copy1 = heroes;
 
+  /*
+  // this fails to compile, since gold_thresh is not in the scope of the function
+  // body:
+  unsigned int gold_thresh = 100u;
   auto end = std::remove_if(std::begin(heroes_copy1), std::end(heroes_copy1),
-    [](const Hero& hero) -> bool { return hero.gold < 100u; });
+    [](const Hero& hero) -> bool { return hero.gold < gold_thresh; });
+  */
+
+  // instead we can pass a "capture list" that effectively creates a temporary
+  // function object with member variable gold_thresh
+  unsigned int gold_thresh = 100u;
+  auto end = std::remove_if(std::begin(heroes_copy1), std::end(heroes_copy1),
+    [gold_thresh](const Hero& hero) -> bool { return hero.gold < gold_thresh; });
+  // another way to think of it is that it puts gold_thresh into the function scope
   heroes_copy1.erase(end, std::end(heroes_copy1));
 
   std::cout << "\nRich Heroes:" << std::endl;
@@ -70,8 +68,11 @@ int main() {
 
   std::vector<Hero> heroes_copy2 = heroes;
 
+  unsigned int honor_thresh = 50u;
+  unsigned int offset       = 10u;
+  // you can also pass multiple variables into the capture list
   end = std::remove_if(std::begin(heroes_copy2), std::end(heroes_copy2),
-    [](const Hero& hero) { return hero.honor > 50u; }); // lambda return type if effectively auto -- so bool is deduced in this case
+    [honor_thresh, offset](const Hero& hero) { return hero.honor > (honor_thresh - offset); });
   heroes_copy2.erase(end, std::end(heroes_copy2));
 
   std::cout << "\nHeroes with shit for honor:" << std::endl;
