@@ -2,4 +2,4 @@
 mpicxx helloworld.cc -o helloworld.bin
 
 # run
-mpiexec -n 4 helloworld.bin
+mpiexec -n 4 ./helloworld.bin

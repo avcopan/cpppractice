@@ -1,0 +1,7 @@
+#MPI
+mpicxx mpi_helloworld.cpp -o mpi_helloworld.bin
+mpiexec -n 4 ./mpi_helloworld.bin
+
+#OMP
+g++ omp_helloworld.cpp -fopenmp -o omp_helloworld.bin
+./omp_helloworld.bin
